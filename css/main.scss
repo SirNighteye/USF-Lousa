@@ -314,7 +314,6 @@ footer {
 }
 .section-footer {
     width: 250px;
-    margin-bottom: 50px;
 }
 .footerabout{
     width: 350px;
@@ -377,5 +376,9 @@ footer {
         flex-direction:column;
         width: 70%;
         margin: 0 auto;
+    }
+    .section-footer {
+        width: 350px;
+        margin-bottom: 50px;
     }
 }

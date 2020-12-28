@@ -393,7 +393,6 @@ footer a:active, footer a:focus, footer a:hover {
 
 .section-footer {
   width: 250px;
-  margin-bottom: 50px;
 }
 
 .footerabout {
@@ -484,6 +483,10 @@ footer a:active, footer a:focus, footer a:hover {
             flex-direction: column;
     width: 70%;
     margin: 0 auto;
+  }
+  .section-footer {
+    width: 350px;
+    margin-bottom: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */
