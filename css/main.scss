@@ -152,7 +152,7 @@ $link-hover-color: $primary-color;
 
 }
 
-// Navigation
+// Navegação
 .navigation {
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.15);
 }
@@ -182,7 +182,7 @@ nav {
                     padding-left: 4px;
                     content: ' ▾';
                 }
-            } // Dropdown list
+            } // Dropdown
             ul li {
                 min-width: 190px;
                 
@@ -297,7 +297,15 @@ nav {
         justify-content: center;
     }
   }
-
+  .icon-about{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  }
 /* || Footer */
 
 footer {
