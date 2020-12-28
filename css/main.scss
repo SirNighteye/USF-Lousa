@@ -13,7 +13,7 @@ sans-serif;
 $headline-font:Georgia,
 serif;
 
-/* || General styles */
+/* || Estilos Gerais */
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +45,7 @@ body {
     margin: 20px 20px;
     cursor: pointer;
 }
-/* || Typography */
+/* || Tipografia */
 h1 { font-family: $text-font;font-size: 82px;font-weight: 400;color:$theme-color; }
 h2 { font-family: $text-font;font-size: 60px; font-weight: 700;line-height: 1; color:$theme-color;}
 h3 { font-family: $text-font;font-size: 40px;font-weight: 400;color:$theme-color; }
@@ -64,26 +64,26 @@ a {
 
 .bold { font-weight: bold; }
 
-// Main Styling
+// Estilo Principal
 header {
     position: fixed;
     z-index: 10000;
     width: 100vw;
 }
-// Navigation Variables
+// Variáveis de Navegação
 $content-width: 1000px;
 $breakpoint: 799px;
 $nav-height: 70px;
 $nav-background: #fff;
 $nav-font-color: #707070;
 $link-hover-color: $primary-color;
-// Outer navigation wrapper
+// Wrapper de navegação externa
 .navigation {
     height: $nav-height;
     background: $nav-background;
 }
 
-// Logo and branding
+// Logo & branding
 .brand {
     z-index: 10;
     position: absolute;
@@ -105,7 +105,6 @@ $link-hover-color: $primary-color;
     display: flex;
     justify-content: center;
     padding: 10px;
-    /* Material design properties */
     background: $primary-color;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
@@ -117,7 +116,7 @@ $link-hover-color: $primary-color;
     }
 }
 
-// Container with no padding for navbar
+// Container sem padding para navbar
 .nav-container {
     margin: 0 auto;
 }
@@ -153,7 +152,7 @@ $link-hover-color: $primary-color;
 
 }
 
-// Navigation 
+// Navigation
 .navigation {
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.15);
 }
