@@ -1,0 +1,316 @@
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+/* 
+============================================
+                Variaveis 
+============================================
+*/
+
+$text-color: #0D1B26;
+$theme-color: #223645;
+$primary-color:#8FB569;
+$accent-color:#FB245C;
+$ternary-color: #ccf962;
+$menu-item-color: white;
+$gray-1: #eee;
+$gray-2: #ccc;
+$gray-3: #555;
+$link-color: $accent-color;
+$content-width: 1200px;
+$nav-background: #fff;
+$text-font: Poppins,
+Verdana,
+arial,
+sans-serif;
+
+/* 
+============================================
+                Estilos Gerais 
+============================================
+*/
+
+hr {
+    border-top: 1px solid $text-font;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 100ms ease;
+}
+
+html,
+body {
+    font-family: $text-font;
+    line-height: 1.7em;
+}
+
+::selection {
+    color: $text-color;
+    background: $primary-color;
+}
+
+.green_button {
+    margin: 20px 0;
+    background-color: $primary-color;
+    border: none;
+    color: white;
+    padding: 15px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 100px;
+}
+
+.line {
+    background-color: $primary-color;
+    width: 47px;
+    height: 5px;
+}
+
+.white {
+    color: white;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button {
+    background: $accent-color;
+    border: none;
+    color: white;
+    padding: 12px 42px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    font-size: 13px;
+    margin: 20px 20px;
+    cursor: pointer;
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+}
+
+ul.breadcrumb {
+    li {
+        display: inline;
+        font-size: 18px;
+    }
+}
+
+ul.breadcrumb {
+    li+li:before {
+        padding: 8px;
+        color: #95a3b3;
+        content: ">";
+    }
+}
+
+ul.breadcrumb {
+    a {
+        color: #95a3b3;
+        text-decoration: none;
+    }
+    .active-link {
+        a {
+            color: $accent-color;
+            background: transparent;
+        }
+    }
+}
+
+.arrow-green {
+    background: $primary-color;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    i {
+        color: $light;
+    }
+}
+
+
+/*
+============================================
+                Tipografia 
+============================================
+*/
+
+h1 {
+    font-family: $text-font;
+    font-size: 82px;
+    font-weight: 400;
+    color: $theme-color;
+}
+
+h2 {
+    font-family: $text-font;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+    color: $theme-color;
+}
+
+h3 {
+    font-family: $text-font;
+    font-size: 40px;
+    font-weight: 400;
+    color: $theme-color;
+}
+
+h4 {
+    font-family: $text-font;
+    font-size: 30px;
+    font-weight: 700;
+    color: $theme-color;
+}
+
+h4 {
+    font-family: $text-font;
+    font-size: 30px;
+    font-weight: 400;
+    color: $theme-color;
+}
+
+h5 {
+    font-family: $text-font;
+    font-size: 26px;
+    font-weight: 600;
+    color: $theme-color;
+}
+
+h6 {
+    font-family: $text-font;
+    font-size: 16px;
+    font-weight: 700;
+    color: $theme-color;
+    text-transform: capitalize;
+}
+
+p {
+    font-family: $text-font;
+    font-size: 14px;
+    font-weight: 400;
+    color: $theme-color;
+}
+
+blockquote {
+    font-size: 20px;
+    font-family: $text-font;
+    font-weight: 600;
+    font-style: italic;
+    p {
+        font-size: 20px;
+        font-family: $text-font;
+        font-weight: 600;
+        font-style: italic;
+        color: #495057;
+    }
+    p::before,
+    p::after {
+        content: "“";
+        font-size: 2rem;
+        opacity: 0.8;
+    }
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.container {
+    width: $content-width;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    td,
+    th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        li {
+            list-style: none;
+        }
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    tr:hover {
+        background-color: #ddd;
+    }
+    th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: $primary-color;
+        color: white;
+    }
+}
+
+.oddTableRow {
+    background-color: rgb(232, 246, 247);
+}
+
+.tableRow {
+    background-color: #fff;
+}
+
+tr:hover {
+    background-color: rgba(233, 235, 154, 0.76) !important;
+}
+
+.selectedTableRow {
+    background-color: rgba(141, 186, 238, 0.76) !important;
+}

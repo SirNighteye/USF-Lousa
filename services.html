@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/menu.js"></script>
+    <script src="https://kit.fontawesome.com/1dda1fed81.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="icon" href="favicon32.jpg" sizes="32x32">
+</head>
+
+<body>
+    <header>
+        <div class="subnav">
+            <div class="subnav_text">
+                <div><i class="fas fa-phone-alt"></i> 239-990-636</div>
+                <div><i class="far fa-clock"></i> <span class="bold">Segunda-Sexta:</span> 8:00H-19:45h</div>
+            </div>
+            <div class="submenu_icons">
+                <a href="https://www.facebook.com/municipiolousa" title="facebook" target="_blank">
+                    <i class="fa fa-facebook-f"></i>
+                </a>
+                <a href="mailto:usf.serradalousa@gmail.com" title="Email" target="_blank">
+                    <i class="fa fa-envelope-open"></i>
+                </a>
+                <a href="https://goo.gl/maps/J54ekyvGTwo55aGb7" title="Localização" target="_blank">
+                    <i class="fa fa-location-arrow"></i>
+                </a>
+            </div>
+
+        </div>
+        </div>
+        <section class="navigation">
+            <div class="nav-container">
+                <div class="brand">
+                    <a href="index.html">
+                        <div id="logo" class="flex"><img src="img/logo_verde.png" width="72" alt="logotipo da USF da lousã"></div>
+                    </a>
+                </div>
+                <nav>
+                    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html">Pagina Inicial</a>
+                        </li>
+                        <li>
+                            <a href="#!">Quem Somos</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="about.html">Missão, Visão, Valores</a>
+                                </li>
+                                <li>
+                                    <a href="team.html">Equipa</a>
+                                </li>
+                                <li>
+                                    <a href="#!">outras informações</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">O que Fazemos</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="services.html">Serviços</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Eventos</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Jornal da Unidade</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="indicators.html">Indicadores</a>
+                        </li>
+                        <li>
+                            <a href="#!">Recursos</a>
+                        </li>
+                        <li>
+                            <a href="#!">Mais Apoio</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Contactos</a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="fa fa-user"></i> Area do cliente</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="login.html">Login</a>
+                                </li>
+                                <li>
+                                    <a href="registar.html">Registar</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="hero-section">
+            <img src="img/hospital.jpg" class="hero-image">
+            <div class="overlay">
+                <div class="hero-text">
+                </div>
+                <div class="text">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Pagina Inicial</a></li>
+                        <li class="active-link"><a href="#">Serviços</a></li>
+                    </ul>
+                    <h2>Serviços</h2>
+                </div>
+            </div>
+        </section>
+        <section class="about container">
+            <div class="grid-services">
+                <div class="offer">
+                    <div class="icon-about"><img src="img/icons/black/Stethoscope.png" /></div>
+                    <h6>Consulta Programada</h6>
+                    <p>Esta é a forma preferencial de utilização da USF.</p>
+                    <a href="#programada">Saber mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="offer">
+                    <div class="icon-about"><img src="img/icons/black/syringe.png" /></div>
+                    <h6>Consulta Urgente</h6>
+                    <p>Estas consultas destinam-se apenas ao atendimento de situações agudas que não possam aguardar pelo agendamento de consulta médica programada.</p>
+                    <a href="#urgente">Saber mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="offer">
+                    <div class="icon-about"><img src="img/icons/black/heart.png" /></div>
+                    <h6>Cuidados de enfermagem</h6>
+                    <p>Faz-se preferencialmente no momento das consultas programadas.</p>
+                    <a href="#enfermagem">Saber mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="offer">
+                    <div class="icon-about"><img src="img/icons/black/pill.png" /></div>
+                    <h6>Atividades não presenciais</h6>
+                    <p>Mediante preenchimento de impresso próprio e sujeito a avaliação médica.</p>
+                    <a href="#atividades">Saber mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="offer">
+                    <div class="icon-about"><img width="37px" src="img/icons/black/Home.png" /></div>
+                    <h6>Consulta no Domicílio</h6>
+                    <p>A consulta domiciliária, médica e/ou de enfermagem, destina-se preferencialmente à vigilância de doentes dependentes, com mobilidade condicionada ou doenças agudas incapacitantes, que não possam deslocar-se à USF e que residam na sua
+                        área de abrangência.</p>
+                    <a href="#domicilio">Saber mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="offer">
+                    <div class="icon-about"><img width="37px" src="img/icons/black/not.png" /></div>
+                    <h6>O que não fazemos...</h6>
+                    <p>O atendimento de situações de emergência e acidentes. Nesses casos deverá dirigir-se aos Serviços de Urgência hospitalares.</p>
+                    <a href="#not">Saber mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div id="programada" class="modal-window ">
+                <div>
+                    <a href="#modal-close" title="Close" class="modal-close">&times;</a>
+                    <div>
+                        <h6>Consultas de vigilância e promoção de saúde</h6>
+                        <ul>
+                            <li>Saúde Infantil e Juvenil (dos 0 aos 18 anos);</li>
+                            <li>Saúde da mulher (planeamento familiar, consulta pré-concepcional, vigilância na gravidez, puerpério e menopausa, rastreios do cancro do colo do útero e da mama)</li>
+                            <li>Saúde do adulto e do idoso</li>
+                        </ul>
+                        <h6>Consulta de seguimento de doenças crónicas </h6>
+                        <p>Diabetes, Hipertensão Arterial e outros problemas de saúde</p>
+                        <hr>
+                        <p>Esta é a forma preferencial de utilização da USF.</p>
+                        <p>A sua marcação pode ser feita pela equipa de saúde (médico - enfermeira) ou por iniciativa do utente através do telefone, e-mail ou, presencialmente no Secretariado Clínico.</p>
+                        <p>Pretende-se que o tempo de marcação destas consultas não ultrapasse os dez dias úteis (com exceção para os períodos de férias ou ausência prolongada do médico).</p>
+                        <p>Cada equipa tem períodos preferenciais de agendamento para a vigilância de saúde nas áreas da Saúde Infantil e Juvenil, Saúde da Mulher, Hipertensão e Diabetes.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="urgente" class="modal-window ">
+                <div>
+                    <a href="#modal-close" title="Close" class="modal-close">&times;</a>
+                    <div>
+                        <h5>Consulta Aguda</h5>
+                        <p>
+                            Estas consultas destinam-se apenas ao atendimento de situações agudas que não possam aguardar pelo agendamento de consulta médica programada. São marcadas no próprio dia e a sua duração é de 10-15 minutos. Cada equipa tem um horário diário para atendimento
+                            destas situações, que pode consultar no secretariado ou no website da USF. A marcação pode ser solicitada pelo utente presencialmente ou através do telefone.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="enfermagem" class="modal-window ">
+                <div>
+                    <a href="#modal-close" title="Close" class="modal-close">&times;</a>
+                    <div>
+                        <h5>Cuidados de enfermagem</h5>
+                        <ul>
+                            <li>
+                                <strong>Vacinação</strong>
+                                <ul>
+                                    <li>
+                                        <p>Faz-se preferencialmente no momento das consultas programadas. Pode ser agendada no horário da USF, entre as 8h00 e as 19h30, salvaguardando assim os 30 minutos de vigilância pós-vacinal recomendado.</p>
+                                        <p>Esta recomendação aplica-se também a certos tratamentos injectáveis.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Pensos</strong>
+                            </li>
+                        </ul>
+                        <hr>
+                        <p>
+                            A administração de vacinas, a realização de pensos, injetáveis ou outros tratamentos serão, por regra, efetuados após marcação prévia, pela enfermeira ou pelo utente, através do telefone ou presencialmente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="atividades" class="modal-window ">
+                <div>
+                    <a href="#modal-close" title="Close" class="modal-close">&times;</a>
+                    <div>
+                        <h5>Atividades não presenciais</h5>
+                        <ul>
+                            <li><strong>Pedidos de credenciais de transporte</strong></li>
+                            <li><strong>Pedidos de medicina física e Reabilitação</strong></li>
+                            <li><strong>Pedidos de renovação de Ventiloterapia Domiciliária</strong></li>
+                            <li>
+                                <strong>Relatórios clínicos</strong>
+                                <ul>
+                                    <li>Mediante preenchimento de impresso próprio e sujeito a avaliação médica. Poderá ser solicitada a presença do utente em consulta.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Renovação de receituário crónico</strong>
+                                <ul>
+                                    <li>É facultada a renovação de receituário no intervalo entre consultas previamente agendadas pelo médico. Contudo, apenas será renovada a medicação que conste do plano terapêutico crónico previamente instituído pelo médico
+                                        de família. Todos os pedidos não contemplados no plano terapêutico terão que ser justificados, caso a caso. A medicação crónica deve ser revista e atualizada periodicamente junto do seu médico de família, não sendo
+                                        possível renovar a prescrição de medicação a um utente que tenha abandonado a vigilância regular da sua situação clínica.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="domicilio" class="modal-window ">
+                <div>
+                    <a href="#modal-close" title="Close" class="modal-close">&times;</a>
+                    <div>
+                        <h6>Consulta no Domicílio</h6>
+                        <p>
+
+
+                            A consulta domiciliária, médica e/ou de enfermagem, destina-se preferencialmente à vigilância de doentes dependentes, com mobilidade condicionada ou doenças agudas incapacitantes, que não possam deslocar-se à USF e que residam na sua área de abrangência.
+                            Pode ainda assumir um carácter preventivo, nomeadamente no recém-nascido e na puérpera.
+                        </p>
+                        <p>Estas consultas têm marcação prévia obrigatória, mediante avaliação do pedido pela equipa clínica.</p>
+                        <p>Podem ser solicitadas pelo utente/família/cuidador ou ser da iniciativa da equipa médico-enfermeiro.</p>
+                        <hr>
+                        <p>Nos restantes casos, a programação será feita de acordo com o plano de cuidados previsto.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="not" class="modal-window ">
+                <div>
+                    <a href="#modal-close" title="Close" class="modal-close">&times;</a>
+                    <div>
+                        <h5>O que não fazemos...</h5>
+                        <p>
+                            O atendimento de situações de emergência e acidentes. Nesses casos deverá dirigir-se aos Serviços de Urgência hospitalares;
+                        </p>
+                        <p>O preenchimento de documentação emanada de instituições privadas;</p>
+                        <p>A transcrição de exames médicos para Medicina do Trabalho, Seguradoras ou instituições hospitalares públicas ou privadas;</p>
+                        <p>Atestados para caça e licença de porte de arma, para a prática de desporto federado, atestado das cartas de condução do Grupo 2, salvo se o médico tiver habilitação específica. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="section-footer footerabout">
+                    <h6>USF Lousã</h6>
+                    <p class="text-justify">Somos uma equipa constituída por Médicos de Família, Enfermeiros, Secretários Clínicos, Assistente Operacional, Internos de Especialidade de Medicina Geral e Familiar, alunos de Medicina e Enfermagem, motivados para o servir melhor.
+                    </p>
+                </div>
+                <div class="section-footer">
+                    <h6>Paginas</h6>
+                    <ul class="footer-links">
+                        <li><a href="">Quem Somos</a></li>
+                        <li><a href="">O que Fazemos</a></li>
+                        <li><a href="">Indicadores</a></li>
+                        <li><a href="">Recursos</a></li>
+                        <li><a href="">Mais Apoio</a></li>
+                        <li><a href="">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="section-footer">
+                    <h6>Categorias</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Informação ao Utente</a></li>
+                        <li><a href="#">Jornal da Unidade</a></li>
+                    </ul>
+                </div>
+                <div class="section-footer">
+                    <h6>Contactos</h6>
+                    <ul class="footer-links">
+                        <li><i class="fa fa-map-marker-alt"></i> <a href="#">Alameda Juiz Conselheiro Neves Ribeiro</a>
+                        </li>
+                        <li><i class="fa fa-phone"></i> <a href="#">239-990-636</a></li>
+                        <li><i class="fa fa-envelope"></i> <a href="#">usf.serradalousa@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class=" container">
+            <div class="footer-bottom row">
+                <div>
+                    <p class="copyright-text">Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script> Daniel Cardoso & Luís Roque. Todos os direitos reservados.
+                    </p>
+                </div>
+
+                <div>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Mapa do site</a>
+                    <a href="#">Termos de uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

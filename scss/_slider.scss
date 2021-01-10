@@ -1,0 +1,111 @@
+.mySlides {
+    display: none;
+    height: 745px;
+}
+
+.slidesimg {
+    object-fit: cover;
+    width: 100%;
+    height: 745px;
+}
+
+#columnchart_material {
+    width: 100%;
+}
+
+
+/* Container do Slideshow */
+
+.slideshow-container {
+    max-width: 100%;
+    height: 745px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Botões do "<" & ">" do slider */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Posicionar o botão ">" à direita */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* efeito :hover nos botões "<" & ">" */
+
+.prev:hover,
+.next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(13, 27, 38, .6);
+}
+
+.text {
+    width: 1000px;
+    padding: 0 32px;
+}
+
+.text {
+    h2 {
+        color: #fff;
+        align-items: center;
+    }
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    width: 13px;
+    height: 10px;
+    display: inline-block;
+    background: #000;
+    opacity: .2;
+    margin: 0 5px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: opacity .5s, background-color .5s, width .5s;
+    transition-delay: .5s, .5s, 0s;
+}
+
+.active {
+    opacity: 1;
+    background: #000;
+    width: 50px;
+    transition-delay: 0s;
+}
+
+.dot:hover {
+    opacity: 1;
+    transition-delay: 0s;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1dda1fed81.js" crossorigin="anonymous"></script>
+    <title>Login – Unidade de Saúde Familiar Serra da Lousã</title>
+    <link rel="icon" href="favicon32.jpg" sizes="32x32">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('img/usf_lousa.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="subnav">
+            <div class="subnav_text">
+                <div><i class="fas fa-phone-alt"></i> 239-990-636</div>
+                <div><i class="far fa-clock"></i> <span class="bold">Segunda-Sexta:</span> 8:00H-19:45h</div>
+            </div>
+            <div class="submenu_icons">
+                <a href="https://www.facebook.com/municipiolousa" title="facebook" target="_blank">
+                    <i class="fa fa-facebook-f"></i>
+                </a>
+                <a href="mailto:usf.serradalousa@gmail.com" title="Email" target="_blank">
+                    <i class="fa fa-envelope-open"></i>
+                </a>
+                <a href="https://goo.gl/maps/J54ekyvGTwo55aGb7" title="Localização" target="_blank">
+                    <i class="fa fa-location-arrow"></i>
+                </a>
+            </div>
+
+        </div>
+        </div>
+        <section class="navigation">
+            <div class="nav-container">
+                <div class="brand">
+                    <a href="index.html">
+                        <div id="logo" class="flex"><img src="img/logo_verde.png" width="72" alt="logotipo da USF da lousã"></div>
+                    </a>
+                </div>
+                <nav>
+                    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html">Pagina Inicial</a>
+                        </li>
+                        <li>
+                            <a href="#!">Quem Somos</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="about.html">Missão, Visão, Valores</a>
+                                </li>
+                                <li>
+                                    <a href="team.html">Equipa</a>
+                                </li>
+                                <li>
+                                    <a href="#!">outras informações</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">O que Fazemos</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="services.html">Serviços</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Eventos</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Jornal da Unidade</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="indicators.html">Indicadores</a>
+                        </li>
+                        <li>
+                            <a href="#!">Recursos</a>
+                        </li>
+                        <li>
+                            <a href="#!">Mais Apoio</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Contactos</a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="fa fa-user"></i> Area do cliente</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="login.html">Login</a>
+                                </li>
+                                <li>
+                                    <a href="registar.html">Registar</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="layer">
+            <img class="Onda" src="img/wave.png">
+            <img class="Onda2" src="img/wave2.png">
+            <img class="logo" src="img/logo_verde.png">
+            <div class="Contentor">
+                <img width="500px" class="medicine" src="img/medicine.svg">
+                <div class="login">
+                    <form class="login1" id="login-form">
+                        <img class="profile-pic" src="img/profile_pic.svg">
+                        <h2 class="title">Inicie sessão</h2>
+                        <div id="login-error-msg">
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            <strong>Login Inválido</strong>, por favor, tente novamente
+                        </div>
+                        <div class="input-div one">
+                            <div class="i">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="div">
+                                <h5>Utilizador</h5>
+                                <input type="text" id="username" required class="input">
+                            </div>
+                        </div>
+                        <div class="input-div pass">
+                            <div class="i">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="div">
+                                <h5>Password</h5>
+                                <input type="password" id="password" maxlength="15" required class="input">
+                            </div>
+                        </div>
+                        <p class="registar6">Esqueceu Password?<a class="gg" href="#">Mudar</a></p>
+                        <p class="registar6">Ainda nao se registou?<a class="gg" href="Registar.html">Registar</a></p>
+                        <input type="submit" class="btn-login" id="login-form-submit" value="Login">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+    </main>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="section-footer footerabout">
+                    <h6>USF Lousã</h6>
+                    <p class="text-justify">Somos uma equipa constituída por Médicos de Família, Enfermeiros, Secretários Clínicos, Assistente Operacional, Internos de Especialidade de Medicina Geral e Familiar, alunos de Medicina e Enfermagem, motivados para o servir melhor.
+                    </p>
+                </div>
+                <div class="section-footer">
+                    <h6>Paginas</h6>
+                    <ul class="footer-links">
+                        <li><a href="">Quem Somos</a></li>
+                        <li><a href="">O que Fazemos</a></li>
+                        <li><a href="">Indicadores</a></li>
+                        <li><a href="">Recursos</a></li>
+                        <li><a href="">Mais Apoio</a></li>
+                        <li><a href="">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="section-footer">
+                    <h6>Categorias</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Informação ao Utente</a></li>
+                        <li><a href="#">Jornal da Unidade</a></li>
+                    </ul>
+                </div>
+                <div class="section-footer">
+                    <h6>Contactos</h6>
+                    <ul class="footer-links">
+                        <li><i class="fa fa-map-marker-alt"></i> <a href="#">Alameda Juiz Conselheiro Neves Ribeiro</a>
+                        </li>
+                        <li><i class="fa fa-phone"></i> <a href="#">239-990-636</a></li>
+                        <li><i class="fa fa-envelope"></i> <a href="#">usf.serradalousa@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class=" container">
+            <div class="footer-bottom row">
+                <div>
+                    <p class="copyright-text">Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script> Daniel Cardoso & Luís Roque. Todos os direitos reservados.
+                    </p>
+                </div>
+
+                <div>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Mapa do site</a>
+                    <a href="#">Termos de uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USF Serra da Lousã – Unidade de Saúde Familiar Serra da Lousã</title>
+    <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css'>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="js/menu.js"></script>
     <script src="https://kit.fontawesome.com/1dda1fed81.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <link rel="icon" href="favicon32.jpg" sizes="32x32">
 
 </head>
@@ -39,7 +41,7 @@
             <div class="nav-container">
                 <div class="brand">
                     <a href="index.html">
-                        <div id="logo"><img src="img/logo_verde.png" width="72" alt="logotipo da USF da lousã"></div>
+                        <div id="logo" class="flex"><img src="img/logo_verde.png" width="72" alt="logotipo da USF da lousã"></div>
                     </a>
                 </div>
                 <nav>
@@ -52,10 +54,10 @@
                             <a href="#!">Quem Somos</a>
                             <ul class="nav-dropdown">
                                 <li>
-                                    <a href="#!">Missão, Visão, Valores</a>
+                                    <a href="about.html">Missão, Visão, Valores</a>
                                 </li>
                                 <li>
-                                    <a href="#!">Equipa</a>
+                                    <a href="team.html">Equipa</a>
                                 </li>
                                 <li>
                                     <a href="#!">outras informações</a>
@@ -66,7 +68,7 @@
                             <a href="#!">O que Fazemos</a>
                             <ul class="nav-dropdown">
                                 <li>
-                                    <a href="#!">Serviços</a>
+                                    <a href="services.html">Serviços</a>
                                 </li>
                                 <li>
                                     <a href="#!">Eventos</a>
@@ -77,7 +79,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#!">Indicadores</a>
+                            <a href="indicators.html">Indicadores</a>
                         </li>
                         <li>
                             <a href="#!">Recursos</a>
@@ -86,16 +88,16 @@
                             <a href="#!">Mais Apoio</a>
                         </li>
                         <li>
-                            <a href="#!">Contactos</a>
+                            <a href="contacts.html">Contactos</a>
                         </li>
                         <li>
                             <a href="#!"><i class="fa fa-user"></i> Area do cliente</a>
                             <ul class="nav-dropdown">
                                 <li>
-                                    <a href="#!">Login</a>
+                                    <a href="login.html">Login</a>
                                 </li>
                                 <li>
-                                    <a href="#!">Registar</a>
+                                    <a href="registar.html">Registar</a>
                                 </li>
                             </ul>
                         </li>
@@ -143,7 +145,6 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
         </div>
-        <br>
 
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
@@ -167,8 +168,12 @@
                 var i;
                 var slides = document.getElementsByClassName("mySlides");
                 var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
                 for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = "none";
                 }
@@ -179,37 +184,764 @@
                 dots[slideIndex - 1].className += " active";
             }
         </script>
-        <div>
-            <div>
-                <h6>Acerca</h6>
-                <h5>Unidade De Saúde Familiar Serra Da Lousã</h3>
-                    <blockquote>"A utopia constrói-se caminhando"</blockquote>
-                    <p>
-                        Somos uma equipa constituída por Médicos de Família,
-                        Enfermeiros, Secretários Clínicos, Assistente Operacional,
-                        Internos de Especialidade de Medicina Geral e Familiar,
-                        alunos de Medicina e Enfermagem, motivados para o
-                        servir melhor.
-                    </p>
+        <section class="about">
+            <div class="container">
+                <div class="grid-about">
+                    <div class="about_text">
+                        <h6>Acerca</h6>
+                        <h5>Unidade De Saúde Familiar Serra Da Lousã</h3>
+                            <blockquote>
+                                <p>A utopia constrói-se</br> caminhando</p>
+                            </blockquote>
+                            <p>
+                                Somos uma equipa constituída por Médicos de Família, Enfermeiros, Secretários Clínicos, Assistente Operacional, Internos de Especialidade de Medicina Geral e Familiar, alunos de Medicina e Enfermagem, motivados para o servir melhor.
+                            </p>
+                            <div class="thumbnail" style="background: url('img/video-thumb.png')">
+                                <div class="overlay-thumbnail">
+                                    <a href="#open-modal">
+                                        <div class="playbutton">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="open-modal" class="modal-window ">
+                                <div>
+                                    <a href="#modal-close" title="Close" class="modal-close">&times;</a>
+                                    <div>
+                                        <video width="400" controls>
+                                            <source src="assets/video/Dra_Marília.mp4" type="video/mp4">
+                                            O seu navegador não suporta vídeo HTML.
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="offer">
+                        <div class="icon-about"><img src="img/icons/black/Stethoscope.png" /></div>
+                        <h6>Consulta Programada</h6>
+                        <p>Esta é a forma preferencial de utilização da USF.</p>
+                        <a href="#programada">Saber mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="offer">
+                        <div class="icon-about"><img src="img/icons/black/syringe.png" /></div>
+                        <h6>Consulta Urgente</h6>
+                        <p>Estas consultas destinam-se apenas ao atendimento de situações agudas que não possam aguardar pelo agendamento de consulta médica programada.</p>
+                        <a href="#urgente">Saber mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="offer">
+                        <div class="icon-about"><img src="img/icons/black/heart.png" /></div>
+                        <h6>Cuidados de enfermagem</h6>
+                        <p>Faz-se preferencialmente no momento das consultas programadas.</p>
+                        <a href="#enfermagem">Saber mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="offer">
+                        <div class="icon-about"><img src="img/icons/black/pill.png" /></div>
+                        <h6>Atividades não presenciais</h6>
+                        <p>Mediante preenchimento de impresso próprio e sujeito a avaliação médica.</p>
+                        <a href="#atividades">Saber mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <a href="services.html" class="button">Saber mais</a>
+                <div id="programada" class="modal-window ">
+                    <div>
+                        <a href="#modal-close" title="Close" class="modal-close">&times;</a>
+                        <div>
+                            <h6>Consultas de vigilância e promoção de saúde</h6>
+                            <ul>
+                                <li>Saúde Infantil e Juvenil (dos 0 aos 18 anos);</li>
+                                <li>Saúde da mulher (planeamento familiar, consulta pré-concepcional, vigilância na gravidez, puerpério e menopausa, rastreios do cancro do colo do útero e da mama)</li>
+                                <li>Saúde do adulto e do idoso</li>
+                            </ul>
+                            <h6>Consulta de seguimento de doenças crónicas </h6>
+                            <p>Diabetes, Hipertensão Arterial e outros problemas de saúde</p>
+                            <hr>
+                            <p>Esta é a forma preferencial de utilização da USF.</p>
+                            <p>A sua marcação pode ser feita pela equipa de saúde (médico - enfermeira) ou por iniciativa do utente através do telefone, e-mail ou, presencialmente no Secretariado Clínico.</p>
+                            <p>Pretende-se que o tempo de marcação destas consultas não ultrapasse os dez dias úteis (com exceção para os períodos de férias ou ausência prolongada do médico).</p>
+                            <p>Cada equipa tem períodos preferenciais de agendamento para a vigilância de saúde nas áreas da Saúde Infantil e Juvenil, Saúde da Mulher, Hipertensão e Diabetes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="urgente" class="modal-window ">
+                    <div>
+                        <a href="#modal-close" title="Close" class="modal-close">&times;</a>
+                        <div>
+                            <h5>Consulta Aguda</h5>
+                            <p>
+                                Estas consultas destinam-se apenas ao atendimento de situações agudas que não possam aguardar pelo agendamento de consulta médica programada. São marcadas no próprio dia e a sua duração é de 10-15 minutos. Cada equipa tem um horário diário para atendimento
+                                destas situações, que pode consultar no secretariado ou no website da USF. A marcação pode ser solicitada pelo utente presencialmente ou através do telefone.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="enfermagem" class="modal-window ">
+                    <div>
+                        <a href="#modal-close" title="Close" class="modal-close">&times;</a>
+                        <div>
+                            <h5>Cuidados de enfermagem</h5>
+                            <ul>
+                                <li>
+                                    <strong>Vacinação</strong>
+                                    <ul>
+                                        <li>
+                                            <p>Faz-se preferencialmente no momento das consultas programadas. Pode ser agendada no horário da USF, entre as 8h00 e as 19h30, salvaguardando assim os 30 minutos de vigilância pós-vacinal recomendado.</p>
+                                            <p>Esta recomendação aplica-se também a certos tratamentos injectáveis.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Pensos</strong>
+                                </li>
+                            </ul>
+                            <hr>
+                            <p>
+                                A administração de vacinas, a realização de pensos, injetáveis ou outros tratamentos serão, por regra, efetuados após marcação prévia, pela enfermeira ou pelo utente, através do telefone ou presencialmente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="atividades" class="modal-window ">
+                    <div>
+                        <a href="#modal-close" title="Close" class="modal-close">&times;</a>
+                        <div>
+                            <h5>Atividades não presenciais</h5>
+                            <ul>
+                                <li><strong>Pedidos de credenciais de transporte</strong></li>
+                                <li><strong>Pedidos de medicina física e Reabilitação</strong></li>
+                                <li><strong>Pedidos de renovação de Ventiloterapia Domiciliária</strong></li>
+                                <li>
+                                    <strong>Relatórios clínicos</strong>
+                                    <ul>
+                                        <li>Mediante preenchimento de impresso próprio e sujeito a avaliação médica. Poderá ser solicitada a presença do utente em consulta.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Renovação de receituário crónico</strong>
+                                    <ul>
+                                        <li>É facultada a renovação de receituário no intervalo entre consultas previamente agendadas pelo médico. Contudo, apenas será renovada a medicação que conste do plano terapêutico crónico previamente instituído pelo
+                                            médico de família. Todos os pedidos não contemplados no plano terapêutico terão que ser justificados, caso a caso. A medicação crónica deve ser revista e atualizada periodicamente junto do seu médico de família,
+                                            não sendo possível renovar a prescrição de medicação a um utente que tenha abandonado a vigilância regular da sua situação clínica.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <div>
-                    <div class="icon-about"><img src="img/Stethoscope.png"/></div>
-                    <h6>Consulta Programada</h6>
-                    <p>Esta é a forma preferencial de utilização da USF.</p>
-                    <a href="#">Saber mais <i class="fas fa-arrow-right"></i></a>
+        </section>
+        <div class="appointment">
+            <div class="container">
+                <div class="appointment_txt">
+                    <h6 class="white">Agendar um compromisso</h6>
+                    <h2 class="white">Marque já </br>uma consulta.</h2>
+                    <button class="green_button">Marcar consulta</button>
+                </div>
+                <div class="appointment_img">
+                    <img src="img/doctor.png" />
                 </div>
             </div>
         </div>
+        <section class="team">
+            <div class="container">
+                <h6>Equipa Experiente</h6>
+                <h2>Provedor de serviços <br>adeptos Equipe</h2>
+                <div style="margin-top: 50px;" class="carousel" data-flickity='{ "groupCells": true }'>
+                    <div class="carousel-cell doctor">
+                        <div>
+                            <img class="doctor-img" src="img/Dr_Joana_Fernandes.png" alt="" />
+                        </div>
+                        <div>
+                            <h5>Joana Fernandes</h5>
+                            <p>Médica</p>
+                            <div class="flex">
+                                <a href="assets/pdf/Horário-JFL-2019-Publico.pdf" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-calendar-alt"></i></div>
+                                </a>
+                                <a href="mailto:joanafernandes@usflousa.pt" title="Email" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-envelope-open"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell doctor">
+                        <div>
+                            <img class="doctor-img" src="img/Enf_Anabela_Girao.png" alt="" />
+                        </div>
+                        <div>
+                            <h5>Anabela Girão</h5>
+                            <p>Enfermeira</p>
+                            <div class="flex">
+                                <a href="http://www.usf-serradalousa.com/wp-content/uploads/2019/11/Hor%C3%A1rio-AG-2019-P%C3%BAblico.pdf" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-calendar-alt"></i></div>
+                                </a>
+                                <a href="mailto:anabelagirao@usflousa.pt" title="Email" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-envelope-open"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell doctor">
+                        <div>
+                            <img class="doctor-img" src="img/Dr_Jorge_Rodrigues.png" alt="" />
+                        </div>
+                        <div>
+                            <h5>Jorge Pedrosa Rodrigues</h5>
+                            <p>Médica</p>
+                            <div class="flex">
+                                <a href="assets/pdf/Horário-JPR-2019-Publico.pdf" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-calendar-alt"></i></div>
+                                </a>
+                                <a href="mailto:jorgerodrigues@usflousa.pt" title="Email" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-envelope-open"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell doctor">
+                        <div>
+                            <img class="doctor-img" src="img/Enf_Carla_Reboredo.png" alt="" />
+                        </div>
+                        <div>
+                            <h5>Carla Reboredo</h5>
+                            <p>Enfermeira</p>
+                            <div class="flex">
+                                <a href="http://www.usf-serradalousa.com/wp-content/uploads/2019/11/Hor%C3%A1rio-CR-2019-P%C3%BAblico.pdf" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-calendar-alt"></i></div>
+                                </a>
+                                <a href="mailto:carlareboredo@usflousa.pt" title="Email" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-envelope-open"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell doctor">
+                        <div>
+                            <img class="doctor-img" src="img/Dr_Luisa_Ramos.png" alt="" />
+                        </div>
+                        <div>
+                            <h5>Luísa Ramos</h5>
+                            <p>Médica</p>
+                            <div class="flex">
+                                <a href="assets/pdf/Horário-LR-2019-Publico.pdf" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-calendar-alt"></i></div>
+                                </a>
+                                <a href="mailto:luisaramos@usflousa.pt" title="Email" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-envelope-open"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell doctor">
+                        <div>
+                            <img class="doctor-img" src="img/Enf_Carlos_Neves.png" alt="" />
+                        </div>
+                        <div>
+                            <h5>Carlos Neves</h5>
+                            <p>Enfermeiro</p>
+                            <div class="flex">
+                                <a href="http://www.usf-serradalousa.com/wp-content/uploads/2019/11/Hor%C3%A1rio-CN-2019-P%C3%BAblico.pdf" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-calendar-alt"></i></div>
+                                </a>
+                                <a href="mailto:carlosneves@usflousa.pt" title="Email" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-envelope-open"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell doctor">
+                        <div>
+                            <img class="doctor-img" src="img/Dr_Paula_Cruz.png" alt="" />
+                        </div>
+                        <div>
+                            <h5>Paula Braga Cruz</h5>
+                            <p>Médica</p>
+                            <div class="flex">
+                                <a href="assets/pdf/Horário-PBC-2019-Publico.pdf" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-calendar-alt"></i></div>
+                                </a>
+                                <a href="mailto:paulacruz@usflousa.pt" title="Email" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-envelope-open"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell doctor">
+                        <div>
+                            <img class="doctor-img" src="img/Enf_Fausto_Cardoso.png" alt="" />
+                        </div>
+                        <div>
+                            <h5>Fausto Cardoso</h5>
+                            <p>Enfermeiro</p>
+                            <div class="flex">
+                                <a href="http://www.usf-serradalousa.com/wp-content/uploads/2019/11/Hor%C3%A1rio-FC-2019-P%C3%BAblico.pdf" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-calendar-alt"></i></div>
+                                </a>
+                                <a href="mailto:faustocardoso@usflousa.pt" title="Email" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-envelope-open"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell doctor">
+                        <div>
+                            <img class="doctor-img" src="img/Dr_Paulo_Costa.png" alt="" />
+                        </div>
+                        <div>
+                            <h5>Paulo Costa</h5>
+                            <p>Médica</p>
+                            <div class="flex">
+                                <a href="assets/pdf/Horário-PC-2019-Publico.pdf" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-calendar-alt"></i></div>
+                                </a>
+                                <a href="mailto:paulocosta@usflousa.pt" title="Email" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-envelope-open"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell doctor">
+                        <div>
+                            <img class="doctor-img" src="img/Enf_Fatima_Moreira.png" alt="" />
+                        </div>
+                        <div>
+                            <h5>Fátima Moreira</h5>
+                            <p>Enfermeira</p>
+                            <div class="flex">
+                                <a href="http://www.usf-serradalousa.com/wp-content/uploads/2019/11/Hor%C3%A1rio-FM-2019-P%C3%BAblico.pdf" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-calendar-alt"></i></div>
+                                </a>
+                                <a href="mailto:fatimamoreira@usflousa.pt" title="Email" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-envelope-open"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell doctor">
+                        <div>
+                            <img class="doctor-img" src="img/Dr_Ana_Bigotte.png" alt="" />
+                        </div>
+                        <div>
+                            <h5>Ana Margarida Bigotte</h5>
+                            <p>Médica</p>
+                            <div class="flex">
+                                <a href="assets/pdf/Horário-AMB-2019-Publico.pdf" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-calendar-alt"></i></div>
+                                </a>
+                                <a href="mailto:anabigotte@usflousa.pt" title="Email" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-envelope-open"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell doctor">
+                        <div>
+                            <img class="doctor-img" src="img/Enf_Joao_Fernandes.png" alt="" />
+                        </div>
+                        <div>
+                            <h5>Joao Fernandes</h5>
+                            <p>Enfermeiro</p>
+                            <div class="flex">
+                                <a href="http://www.usf-serradalousa.com/wp-content/uploads/2019/11/Hor%C3%A1rio-JF-2019-P%C3%BAblico.pdf" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-calendar-alt"></i></div>
+                                </a>
+                                <a href="mailto:joaofernandes@usflousa.pt" title="Email" target="_blank">
+                                    <div class="icon-doctor"><i class="far fa-envelope-open"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="section_covid">
+            <div class="overlay-covid">
+                <div class="container">
+                    <div>
+                        <h2>Tudo o que necessita de saber sobre o COVID-19</h2>
+                        <p>Saiba tudo sobre o novo coronavírus (covid-19): como se prevenir, como é a transmissão, quais são os sintomas</p>
+                        <a href="https://covid19.min-saude.pt/" target="_blank">Saber mais <i class="fas fa-arrow-right"></i></a>
+                        <div class="flex">
+                            <div class="recommendation ">
+                                <img src="img/disinfectant.png" alt="">
+                                <h6>Lave regularmente as mãos</h6>
+                            </div>
+                            <div class="recommendation ">
+                                <img src="img/mask.png" alt="">
+                                <h6>Use sempre mascara em locais fechados</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/covid.png" class="covid-img">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container flex">
+                <h2>Galeria</h2>
+                <div class="line"></div>
+                <div class="gallery_grid">
+                    <a class="img1" href="#img1">
+                        <img class="small" src="img/hall.png" alt="">
+                    </a>
+                    <a href="#img2">
+                        <img class="small" src="img/usf_lousa.jpg" alt="">
+                    </a>
+                    <a href="#img3">
+                        <img class="small" src="img/vaccination.jpg" alt="">
+                    </a>
+                    <a href="#img4">
+                        <img class="small" src="img/Trevim_Sol.png" alt="">
+                    </a>
+                    <a href="#img5">
+                        <img class="small" src="img/usf_team.jpg" alt="">
+                    </a>
+                    <a class="img3" href="#img6">
+                        <img class="small" src="img/team_trevim.jpg" alt="">
+                    </a>
+                </div>
+
+                <!--Lightboxes-->
+
+                <a href="#_" class="lightbox" id="img1">
+                    <div>
+                        <img src="img/hall.png" />
+                        <p>Entrada da Unidade de saúde da Lousã</p>
+                    </div>
+                </a>
+                <a href="#_" class="lightbox" id="img2">
+                    <div>
+                        <img src="img/usf_lousa.jpg" />
+                        <p>Unidade de Saúde Familiar da Lousã</p>
+                    </div>
+
+                </a>
+                <a href="#_" class="lightbox" id="img3">
+                    <div>
+                        <img src="img/vaccination.jpg" />
+                        <p>Vacinação</p>
+                    </div>
+
+                </a>
+                <a href="#_" class="lightbox" id="img4">
+                    <div>
+                        <img src="img/Trevim_Sol.png" />
+                        <p>Ordem dos Médicos visita Unidade de Saúde Familiar Trevim Sol</p>
+                    </div>
+
+                </a>
+                <a href="#_" class="lightbox" class="img5" id="img5">
+                    <div>
+                        <img src="img/usf_team.jpg" />
+                        <p>Equipa da usf Lousã</p>
+                    </div>
+                </a>
+                <a href="#_" class="lightbox" id="img6">
+                    <div>
+                        <img src="img/team_trevim.jpg" />
+                        <p>Enfermeiras da usf</p>
+                    </div>
+
+                </a>
+            </div>
+        </section>
+        <section class="question flex" style="background: #F4F9FC">
+            <div class="container">
+                <h2>Perguntas Frequentes</h2>
+                <section class="accordion">
+                    <input type="checkbox" name="collapse" id="handle1" checked="checked">
+                    <h3 class="handle">
+                        <label for="handle1">1. O que é a COVID-19?</label>
+                    </h3>
+                    <div class="content">
+                        <p>
+                            <strong>COVID-19</strong> (Coronavirus Disease) significa <strong>Doença por Coronavírus – 2019</strong> e refere-se ao nome da doença causada pelo novo Coronavírus (também designado por SARS-CoV-2). Este vírus foi identificado
+                            pela primeira vez em dezembro de 2019 na China e nunca tinha sido identificado anteriormente em seres humanos.
+                        </p>
+
+                    </div>
+                </section>
+                <section class="accordion">
+                    <input type="checkbox" name="collapse" id="handle2">
+                    <h3 class="handle">
+                        <label for="handle2">2. De que forma se transmite o CORONAVÍRUS?</label>
+                    </h3>
+                    <div class="content">
+                        <p>
+                            Transmite-se por contacto <strong>próximo com pessoas infectadas pelo vírus ou superfícies e objetos contaminados</strong>. Ou seja, através de <strong>gotículas</strong> libertadas pelo nariz ou boca ao <strong>tossir</strong>                            ou <strong>espirrar</strong>. As gotículas podem atingir directamente a boca, nariz e olhos de quem estiver próximo OU podem depositar-se em objetos/superfícies que outras pessoas ao tocar e depois tocar nos olhos, nariz ou
+                            boca com as mãos se podem infectar.
+                        </p>
+                    </div>
+                </section>
+                <section class="accordion">
+                    <input type="checkbox" name="collapse" id="handle3">
+                    <h3 class="handle">
+                        <label for="handle3">3. Quais são os SINTOMAS desta doença?</label>
+                    </h3>
+                    <div class="content">
+                        <p>
+                            A maioria das pessoas infetadas apresentam sintomas de infecção respiratória aguda com sintomas/sinais <strong>ligeiros a moderados</strong>: <strong>TOSSE</strong> OU <strong>FEBRE (> 37,5ºC)</strong> OU <strong>FALTA DE AR</strong>.
+                        </p>
+                    </div>
+                </section>
+                <section class="accordion">
+                    <input type="checkbox" name="collapse" id="handle4">
+                    <h3 class="handle">
+                        <label for="handle4">4. Como me posso PROTEGER ou EVITAR o contágio de outras pessoas?</label>
+                    </h3>
+                    <div class="content">
+                        <ol type="A">
+                            <li>
+                                <p><strong>HIGIENE DAS MÃOS</strong> - Deve lavá-las sempre que se assoar, espirrar, tossir ou após contacto directo com qualquer pessoa ou superfícies. Deve lavá-las durante <strong>20 segundos</strong> com <strong>água e sabão</strong>                                    ou com <strong>solução à base de álcool a 70%</strong></p>
+                            </li>
+                            <li>
+                                <p><strong>ETIQUETA RESPIRATÓRIA</strong> - tapar o nariz e a boca quando espirrar ou tossir, com <strong>um lenço de papel ou com o antebraço, NUNCA com as mãos e deitar SEMPRE o lenço de papel no lixo após usado</strong>.
+                                    Não esquecer de lavar as mãos no final.
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong>EVITAR TOCAR NA CARA COM AS MÃOS</strong></p>
+                            </li>
+                            <li>
+                                <p><strong>EVITAR PARTILHAR OBJECTOS PESSOAIS OU COMIDA </strong></p>
+                            </li>
+                            <li>
+                                <p><strong>EVITAR CONTACTO SOCIAL DESNECESSÁRIO</strong></p>
+                            </li>
+                            <li>
+                                <p><strong>EVITAR CONTACTO FÍSICO DIRECTO</strong></p>
+                            </li>
+                            <li>
+                                <p><strong>MANTER CONTACTO FRENTE A FRENTE A UMA DISTÂNCIA DE 2 METROS</strong></p>
+                            </li>
+                            <li>
+                                <p>Usar <strong>máscara</strong> se tiver sintomas de infecção respiratória (tosse ou espirro)</p>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="accordion">
+                    <input type="checkbox" name="collapse" id="handle5">
+                    <h3 class="handle">
+                        <label for="handle5">5. O que devo fazer se tiver TOSSE ou FEBRE ou FALTA DE AR?</label>
+                    </h3>
+                    <div class="content">
+                        <p><strong>LIGUE 808 24 24 24</strong></p>
+                        <p>
+                            Mantenha-se em <strong>CASA</strong>, enquanto aguarda orientação do SNS 24 e cumpra as recomendações no <strong>ponto 4</strong>.
+                        </p>
+                        <p>
+                            <strong>NÃO</strong> deve deslocar-se ao Serviço de Urgência nem ao Centro de Saúde.
+                        </p>
+                        <p>
+                            É <strong>MUITO IMPORTANTE</strong> que se mantenha em casa, caso não precise de cuidados imediatos.Desta forma, <strong>estará a proteger-se, bem como a restante população, incluindo os Profissionais de Saúde</strong>.
+                        </p>
+                        <p>
+                            Se desenvolver sintomas ligeiros, é aconselhável que permaneça em <strong>ISOLAMENTO</strong>, ou seja, que preconize medidas de afastamento social.Se for necessário o Certificado de Incapacidade Temporária (CIT – “baixa médica”),
+                            por favor contacte-nos por e-mail ou contacto telefónico.
+                        </p>
+                        <p>
+                            <strong>NÃO É NECESSÁRIO vir ao Centro de Saúde</strong>. A sua remuneração será de acordo com a lei em vigor.
+                        </p>
+                        <p>
+                            » <strong>Para obter comprovativo de contacto com a SNS 24:</strong> deve enviar email para o SNS 24 (<a href="emailto:atendimento@sns24.gov.pt">atendimento@sns24.gov.pt</a>), com o número de utente, data de nascimento e data
+                            de contacto. (Mais esclarecimentos em <a href="http://www.seg-social.pt/incapacidade-temporaria" traget="_blank">http://www.seg-social.pt/incapacidade-temporaria</a> )
+                        </p>
+
+                    </div>
+                </section>
+                <section class="accordion">
+                    <input type="checkbox" name="collapse" id="handle6">
+                    <h3 class="handle">
+                        <label for="handle6">6. Foi-me indicado pelo SNS 24 permanecer em ISOLAMENTO/QUARENTENA: e agora?</label>
+                    </h3>
+                    <div class="content">
+                        <ol type="A">
+                            <li>
+                                <p>O Isolamento e quarentena (isolamento profilático) são medidas de distanciamento social e correspondem a um período de que <strong>lhe será comunicado pela Autoridade de Saúde ou Clínico que o acompanha</strong> (deve <strong>cumprir
+                                    as recomendações da Direcção Geral de Saúde</strong> que pode consultar - <a href="https://covid19.min-saude.pt/wp-content/uploads/2020/03/i026011.pdf" target="_blank">aqui</a>).</p>
+                            </li>
+                            <li>
+                                <p>O <strong>isolamento profilático</strong> é utilizado em indivíduos que se pressupõe serem saudáveis, mas possam ter estado em contacto com um doente com a COVID-19. Apesar de não terem sintomas, <strong>é essencial permanecer
+                                    em casa durante o período total.</strong></p>
+                            </li>
+                            <li>
+                                <p>A <strong>declaração de isolamento profilático</strong> é <strong>emitida pela Autoridade de Saúde (Delegado de Saúde)</strong> e substitui o documento justificativo da ausência ao trabalho. O Delegado de Saúde enviará
+                                    este documento via <strong>e-mail</strong>, não sendo preciso deslocar-se ao Centro de Saúde. Tem direito ao pagamento de um subsídio equivalente ao subsídio de doença com um valor correspondente a <strong>100% da sua remuneração
+                                        de referência, enquanto durar o isolamento.</strong></p>
+                            </li>
+                            <li>
+                                <p>O trabalhador deve enviar a sua declaração de isolamento profilático à sua <strong>entidade empregadora</strong>, e esta deve remetê-la à Segurança Social no prazo máximo de 5 dias.</p>
+                            </li>
+                            <li>
+                                <p>Caso existam condições para trabalhar em regime de <strong>teletrabalho</strong>, deve continuar a trabalhar e <strong>receberá a sua remuneração habitual</strong>, paga pela entidade trabalhadora.</p>
+                            </li>
+                            <li>
+                                <p>Dado o encerramento dos estabelecimentos de ensino, pode ter <strong>justificação da sua ausência ao trabalho</strong>, para assistência ao seu filho, caso este tenha <strong>idade inferior a 12 anos</strong> ou este padeça
+                                    de <strong>deficiência/doença crónica</strong>, EXCEPTO se coincidir com férias escolares.</p>
+                            </li>
+                            <li>
+                                <p>Caso trabalhe por conta de outrem, deve <strong>preencher a Declaração no anexo 2</strong> (<a href="https://www.dgaep.gov.pt/coronavirus/modelos/COVID_DeclaracaoApoioExcecional_Familia_DGAEP.pdf" target="_blank">Aqui</a>;
+                                    ver também: <a href="http://www.seg-social.pt/formularios" target="_blank">http://www.seg-social.pt/formularios</a> ) e enviar à Entidade Empregadora.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Caso trabalhe por conta própria, deve <strong>consultar</strong> o <strong>anexo 3</strong> (ver Drive; ver também o artigo 24 do Decreto Lei 10-A 2020).
+                                </p>
+                            </li>
+                            <li>
+                                <p>De salvaguardar, que apenas poderá ficar um <strong>beneficiário</strong> responsável por prestar assistência ao dependente identificado (ex: pais).</p>
+                            </li>
+                            <li>
+                                <p>Em relação ao apoio financeiro excepcional e em relação a outras dúvidas, deve consultar o <strong>anexo 3</strong> (ver Drive; ver também:
+                                    <a href="http://www.segsocial.pt/" traget="_blank">http://www.segsocial.pt/</a>).</p>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="accordion">
+                    <input type="checkbox" name="collapse" id="handle7">
+                    <h3 class="handle">
+                        <label for="handle7">7. Tenho FILHOS em CASA: como devo proceder?</label>
+                    </h3>
+                    <div class="content">
+                        <ol type="A">
+                            <li>
+                                <p> Dado o encerramento dos estabelecimentos de ensino, pode ter <strong>justificação da sua ausência ao trabalho</strong>, para assistência ao seu filho,caso este tenha <strong>idade inferior a 12 anos</strong> ou este padeça
+                                    de deficiência/doença crónica, <strong>EXCEPTO se coincidir com férias escolares</strong>.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Caso trabalhe por conta de outrem, deve preencher esta <strong>Declaração</strong> (ver também: <a href="http://www.seg-social.pt/formularios" target="_blank">http://www.seg-social.pt/formularios</a>) e enviar à Entidade
+                                    Empregadora.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Caso trabalhe por conta própria, deve <strong>consultar</strong> este <strong>anexo</strong> (ver também o artigo 24 do Decreto Lei 10-A 2020).</p>
+                            </li>
+                            <li>
+                                <p>De salvaguardar, que apenas poderá ficar <strong>um beneficiário</strong> responsável por prestar assistência ao dependente identificado (ex.: pais).</p>
+                            </li>
+                            <li>
+                                <p>Em relação ao apoio financeiro excepcional e em relação a outrasdúvidas, deve consultar este <strong>anexo</strong> (ver também: <a href="http://www.segsocial.pt/" target="_blank">http://www.segsocial.pt/</a></p>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="accordion">
+                    <input type="checkbox" name="collapse" id="handle8">
+                    <h3 class="handle">
+                        <label for="handle8">8. Fui CONFIRMADO com COVID-19: e agora?</label>
+                    </h3>
+                    <div class="content">
+                        <ol type="1">
+                            <li>
+                                <p>Sempre que se verificar que a pessoa ficou doente, será emitido <strong>certificado de incapacidade temporária (“baixa médica”) via e-mail</strong>, que substitui a declaração de isolamento profilático e aplica-se a lei
+                                    em vigor.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Se o doente é internado num hospital de referência, o procedimento é idêntico ao habitualmente utilizado no internamento hospitalar.</p>
+                            </li>
+                            <li>
+                                <p>Para dúvidas relativamente às “<strong>baixas médicas</strong>” deve contactar a Segurança Social via <strong>300 502 502</strong>.</p>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="accordion">
+                    <input type="checkbox" name="collapse" id="handle9">
+                    <h3 class="handle">
+                        <label for="handle9">9. Estou GRÁVIDA/AMAMENTAR: que cuidados devo ter?</label>
+                    </h3>
+                    <div class="content">
+                        <ol type="A">
+                            <li>
+                                <p>As grávidas devem seguir os cuidados preconizados para a população em geral, tal como explicado nas <strong>recomendações no ponto 4</strong>.</p>
+                            </li>
+                            <li>
+                                <p><strong>Até à data</strong>, pensa-se que as grávidas sejam mais suscetíveis a apresentar consequências da infecção do que a população em geral. </p>
+                            </li>
+                            <li>
+                                <p><strong>Até à data</strong>, não há evidência que a COVID-19 resulte num maior risco de aborto, assim como não há evidência de infeção fetal intrauterina.</p>
+                            </li>
+                            <li>
+                                <p> Relativamente à <strong>amamentação</strong>, tendo em conta o conhecimento que se dispõe <strong>até a data</strong>, o vírus não se encontra presente no leite materno, sendo o maior risco o contacto próximo entre mãe
+                                    e filho. Pelo que, durante a amamentação, devem ser tomadas as seguintes precauções: </p>
+                                <ol type="a">
+                                    <li>
+                                        <p><strong>Lavar as mãos</strong> antes de tocar no bebé, bomba de leite ou biberão;</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>Evitar tossir ou espirrar</strong> enquanto está a amamentar.</p>
+                                    </li>
+                                    <li>
+                                        <p>Seguir as recomendações de <strong>limpeza da bomba de leite </strong> após cada utilização.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Se estiver <strong>grávida, a amamentar, ou durante o período até 6 semanas pós-parto</strong>, pode solicitar via Segurança Social Directa, <strong>Subsídio por Riscos Específicos</strong>. consultar o <strong>anexo 4</strong>                                    (ver também: <a href="http://www.seg-social.pt/subsidio-por-riscos-especificos" target="_blank">http://www.seg-social.pt/subsidio-por-riscos-especificos</a>).
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="accordion">
+                    <input type="checkbox" name="collapse" id="handle10">
+                    <h3 class="handle">
+                        <label for="handle10">10. Sou doente IMUNODEPRIMIDO ou tenho DOENÇA CRÓNICA: que cuidados devo ter?</label>
+                    </h3>
+                    <div class="content">
+                        <ol type="A">
+                            <li>
+                                <p>Cumprir as <strong>recomendações gerais</strong> para toda a população.</p>
+                            </li>
+                            <li>
+                                <p>Uma vez que pertence ao grupo da população considerado de risco, deve ter cuidados acrescidos e <strong>estar alerta</strong> para o aparecimento de eventuais sintomas.
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong>Mantenha-se informado</strong>, com base em fontes recomendadas (Direcção Geral de Saúde, <em>World Health Organization, Centers for Disease Control and Prevention, European Centre for Disease Prevention and Control</em>).</p>
+                            </li>
+                            <li>
+                                <p><strong>Mantenha-se informado</strong>, com base em fontes recomendadas (Direcção Geral de Saúde, World Health Organization, Centers for Disease Control and Prevention, European Centre for Disease Prevention and Control).</p>
+                            </li>
+                            <li>
+                                <p>Mantenha a sua medicação habitual, tal como prescrito pelo seu Médico de Família. Se necessário, poderá solicitar a renovação de receituário via e-mail ou telefone.</p>
+                            </li>
+                            <li>
+                                <p>Se tiver seguimento em consulta hospitalar envie um e-mail ou telefone para o serviço responsável a informar da sua situação actual, para <strong>eventual necessidade de ajuste terapêutico</strong>, principalmente se estiver
+                                    medicado com imunossupressores.
+                                </p>
+                            </li>
+                            <li>
+                                <p> Se apresentar <strong>TOSSE</strong> OU <strong>FEBRE (> 37,5ºC)</strong> OU <strong>FALTA DE AR</strong>: Telefone para <strong>808 24 24 24</strong> (Informe o Profissional de Saúde da sua doença, se estiver grávida/a
+                                    amamentar). Mantenha-se em CASA, enquanto aguarda orientação da Saúde 24 e <strong>cumpra as recomendações no ponto 4</strong>. <strong>NÃO</strong> deve deslocar-se ao Serviço de Urgência nem ao Centro de Saúde.</p>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+
+
+            </div>
+            </div>
+            </div>
+            </div>
+        </section>
+        </div>
+        </section>
     </main>
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="section-footer footerabout">
                     <h6>USF Lousã</h6>
-                    <p class="text-justify">Somos uma equipa constituída por Médicos de Família, Enfermeiros,
-                        Secretários Clínicos, Assistente Operacional, Internos de Especialidade de Medicina Geral e
-                        Familiar, alunos de Medicina e Enfermagem, motivados para o servir melhor.
+                    <p class="text-justify">Somos uma equipa constituída por Médicos de Família, Enfermeiros, Secretários Clínicos, Assistente Operacional, Internos de Especialidade de Medicina Geral e Familiar, alunos de Medicina e Enfermagem, motivados para o servir melhor.
                     </p>
                 </div>
                 <div class="section-footer">
@@ -247,8 +979,9 @@
             <div class="footer-bottom row">
                 <div>
                     <p class="copyright-text">Copyright &copy;
-                        <script>document.write(new Date().getFullYear())</script> Daniel Cardoso & Luís Roque. Todos os
-                        direitos reservados.
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script> Daniel Cardoso & Luís Roque. Todos os direitos reservados.
                     </p>
                 </div>
 

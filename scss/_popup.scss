@@ -1,0 +1,207 @@
+.modal-window {
+    position: fixed;
+    background-color: rgba(200, 200, 200, 0.75);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal-window:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-window>div {
+    width: 50%;
+    position: relative;
+    margin: 10% auto;
+    padding: 2rem;
+    background: #fff;
+    color: #444;
+    border-radius: 5px;
+}
+
+.modal-window header {
+    font-weight: bold;
+}
+
+.modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 150%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+}
+
+.modal-close:hover {
+    color: #000;
+}
+
+.modal-window h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    .modal-window>div {
+        width: 80%
+    }
+    .text {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .modal-window>div {
+        width: 60%;
+    }
+}
+
+.small {
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.small:hover {
+    -webkit-transform: scale(1.03, 1.03);
+    transform: scale(1.03, 1.03);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.lightbox img {
+    max-width: 80%;
+}
+
+a div {
+    position: relative;
+    margin: auto auto;
+    text-align: center;
+}
+
+.lightbox:target {
+    display: -webkit-box;
+    display: flex;
+}
+
+.lightbox a {
+    text-decoration: none;
+}
+
+.lightbox p {
+    font-size: 20px;
+    color: white;
+}
+
+
+/*
+ CSS for the main interaction
+*/
+
+.accordion>input[name="collapse"] {
+    display: none;
+    /*position: absolute;
+    left: -100vw;*/
+}
+
+.accordion label,
+.accordion .content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.accordion .content {
+    background: #fff;
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.04);
+    border-radius: 0 0 5px 5px;
+}
+
+.accordion>input[name="collapse"]:checked~.content {
+    height: auto;
+    padding: 16px 32px;
+    transition: height 0.5s;
+}
+
+.accordion label {
+    display: block;
+}
+
+
+/* For Desktop */
+
+@media only screen and (min-width: 620px) {
+    .accordion>input[name="collapse"]:checked~.content {
+        height: auto;
+    }
+}
+
+.accordion {
+    margin-bottom: 1em;
+}
+
+.accordion>input[name="collapse"]:checked~.content {
+    border-top: 0;
+    transition: 300ms;
+}
+
+.accordion .handle {
+    margin: 0;
+    font-size: 16px;
+}
+
+.accordion label {
+    color: #707070;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 10px;
+    background: #fff;
+    user-select: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(13, 27, 38, .04);
+}
+
+.accordion label:hover,
+.accordion label:focus {
+    background: #1d252d;
+    color: #fff;
+}
+
+.accordion .handle label:before {
+    font-family: FontAwesome;
+    content: "\f107";
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1em;
+    line-height: 1.556em;
+    vertical-align: middle;
+    transition: 0.4s;
+}
+
+.accordion>input[name="collapse"]:checked~.handle label:before {
+    transform: rotate(180deg);
+    transform-origin: center;
+    transition: 0.4s;
+}
