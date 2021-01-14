@@ -247,6 +247,3 @@ function drawChart() {
     chart.draw(data5, options5);
 
 }
-$(window).resize(function() {
-    drawChart();
-});

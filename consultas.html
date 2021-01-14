@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactos – Unidade de Saúde Familiar Serra da Lousã</title>
+    <title>Recursos – Unidade de Saúde Familiar Serra da Lousã</title>
     <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css'>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
@@ -114,100 +114,73 @@
                 <div class="text">
                     <ul class="breadcrumb">
                         <li><a href="index.html">Pagina Inicial</a></li>
-                        <li class="active-link"><a href="#">Contactos</a></li>
+                        <li class="active-link"><a href="#">Consultas</a></li>
                     </ul>
-                    <h2>Contactos</h2>
+                    <h2>Consultas</h2>
                 </div>
             </div>
         </section>
         <div class="container">
-            <p>Sempre que possível, marque as suas consultas por telefone ou internet.</p>
-            <h5>Telefones:</h5>
-            <h5>Atendimento Geral (Assistentes Operacionais)</h5>
-            <p>&nbsp;Segunda a Sexta-feira 09:00h – 18:00h</p>
-            <p><strong>Número Geral</strong>: 239990636</p>
-            <hr>
-            <h5>Atendimento Secretariado Clínico</h5>
-            <p>Segunda a Sexta-feira 08:00h – 19:45h</p>
-            <p><strong>Ana Paula Esteves:</strong> 239990615 <strong>Rosário Carreira</strong><strong>:</strong> 239990614 <strong>João Paulo:</strong> 239990625 <strong>Sónia Tomé:</strong>239990624</p>
-            <hr>
-            <h5>Atendimento Médicos</h5>
-            <p>Segunda a Sexta -feira Definido no horário médico disponível <a href="http://www.newsite.usf-serradalousa.com/wp/horarios/">aqui</a></p>
-            <p>&nbsp;<strong>Joana Fernandes:</strong> 239990633 &nbsp;<strong>Jorge Rodrigues:</strong> 239990619&nbsp;<strong>Luísa Ramos:</strong>&nbsp;239990637<strong>Paula Braga da Cruz:</strong> 239990631 <strong>Paulo Costa:</strong> 239990616</p>
-            <hr>
-            <h5>Atendimento Enfermeiros</h5>
-            <p>Segunda a Sexta -feira 8.00h – 19:45h</p>
-            <p>239990639 ou 239990630</p>
-            <p><strong>Número da Sala de Tratamentos:</strong> 239990638</p>
-            <h4>E-mail:</h4>
-            <p>usf.serradalousa@gmail.com</p>
-            <p>&nbsp;</p>
-            <h4>Morada:</h4>
-            <p>Alameda Juiz Conselheiro Neves Ribeiro</p>
-            <p><img class="alignnone size-medium wp-image-435" src="http://www.usf-serradalousa.com/wp-content/uploads/2017/02/mapa-300x158.png" alt="mapa" srcset="http://www.usf-serradalousa.com/wp-content/uploads/2017/02/mapa-300x158.png 300w, http://www.usf-serradalousa.com/wp-content/uploads/2017/02/mapa-768x403.png 768w, http://www.usf-serradalousa.com/wp-content/uploads/2017/02/mapa-1024x538.png 1024w, http://www.usf-serradalousa.com/wp-content/uploads/2017/02/mapa.png 1399w"
-                    sizes="(max-width: 300px) 100vw, 300px" width="300" height="158"></p>
-            <p><a href="https://goo.gl/maps/LRz6fBHPvrG2">Mapa AQUI</a></p>
+            <form action="/signup" method="post">
+                <p>
+                    <label>Title</label><br>
+                    <label>
+                    <input type="radio" name="title" value="mr">
+                    Mr
+                  </label>
+                    <label>
+                    <input type="radio" name="title" value="mrs">
+                    Mrs
+                  </label>
+                    <label>
+                    <input type="radio" name="title" value="miss">
+                    Miss
+                  </label>
+                </p>
+                <p>
+                    <label>First name</label><br>
+                    <input type="text" name="first_name">
+                </p>
+                <p>
+                    <label>Last name</label><br>
+                    <input type="text" name="last_name">
+                </p>
+                <p>
+                    <label>Email</label><br>
+                    <input type="email" name="email" required>
+                </p>
+                <p>
+                    <label>Phone number</label><br>
+                    <input type="tel" name="phone">
+                </p>
+                <p>
+                    <label>Password</label><br>
+                    <input type="password" name="password">
+                </p>
+                <p>
+                    Selecione o seu medico:<br />
+                    <select name="Medicos" multiple size="8">
+                    <option value="1">Lisboa</option>
+                    <option value="2">Paris</option>
+                    <option value="3">Londres</option>
+                    <option value="4">Tóquio</option>
+                    <option value="5">Sydney</option>
+                    <option value="6">Berlim</option>
+                    </select>
+                </p>
+                <p>
+                    <label>
+                    <input type="checkbox" value="terms">
+                    I agree to the <a href="/terms">terms and conditions</a>
+                  </label>
+                </p>
+                <p>
+                    <button>Sign up</button>
+                    <button type="reset">Reset form</button>
+                </p>
+            </form>
         </div>
     </main>
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="section-footer footerabout">
-                    <h6>USF Lousã</h6>
-                    <p class="text-justify">Somos uma equipa constituída por Médicos de Família, Enfermeiros, Secretários Clínicos, Assistente Operacional, Internos de Especialidade de Medicina Geral e Familiar, alunos de Medicina e Enfermagem, motivados para o servir melhor.
-                    </p>
-                </div>
-                <div class="section-footer">
-                    <h6>Paginas</h6>
-                    <ul class="footer-links">
-                        <li><a href="">Quem Somos</a></li>
-                        <li><a href="">O que Fazemos</a></li>
-                        <li><a href="">Indicadores</a></li>
-                        <li><a href="">Recursos</a></li>
-                        <li><a href="">Mais Apoio</a></li>
-                        <li><a href="">Contactos</a></li>
-                    </ul>
-                </div>
-                <div class="section-footer">
-                    <h6>Categorias</h6>
-                    <ul class="footer-links">
-                        <li><a href="#">Eventos</a></li>
-                        <li><a href="#">Informação ao Utente</a></li>
-                        <li><a href="#">Jornal da Unidade</a></li>
-                    </ul>
-                </div>
-                <div class="section-footer">
-                    <h6>Contactos</h6>
-                    <ul class="footer-links">
-                        <li><i class="fa fa-map-marker-alt"></i> <a href="#">Alameda Juiz Conselheiro Neves Ribeiro</a>
-                        </li>
-                        <li><i class="fa fa-phone"></i> <a href="#">239-990-636</a></li>
-                        <li><i class="fa fa-envelope"></i> <a href="#">usf.serradalousa@gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-        </div>
-        <div class=" container">
-            <div class="footer-bottom row">
-                <div>
-                    <p class="copyright-text">Copyright &copy;
-                        <script>
-                            document.write(new Date().getFullYear())
-                        </script> Daniel Cardoso & Luís Roque. Todos os direitos reservados.
-                    </p>
-                </div>
-
-                <div>
-                    <a href="#">Política de Privacidade</a>
-                    <a href="#">Mapa do site</a>
-                    <a href="#">Termos de uso</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
 </body>
 
 </html>

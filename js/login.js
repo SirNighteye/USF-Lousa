@@ -2,18 +2,18 @@ const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
 
-// When the login button is clicked, the following code is executed
+// Quando o botão de login é clicado, o seguinte código é executado
 loginButton.addEventListener("click", (e) => {
-    // Prevent the default submission of the form
+    // Impedir o envio padrão do formulário
     e.preventDefault();
-    // Get the values input by the user in the form fields
+    // Obtem os valores inseridos pelo usuário nos campos do formulário
     const username = loginForm.username.value;
     const password = loginForm.password.value;
 
     if (username === "admin" && password === "admin") {
-        // If the credentials are valid, show an alert box and reload the page
+        // Se as credenciais forem válidas, mostra uma caixa de alerta e recarrega a página
         alert("Você fez login com sucesso.");
-        window.location.href = "7.1.2welcome_user.html";
+        window.location.href = "welcome_user.html";
 
         location.reload();
     } else {

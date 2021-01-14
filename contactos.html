@@ -4,16 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-    <title>Registo – Unidade de Saúde Familiar Serra da Lousã</title>
-    <style>
-        body {
-            background: url('img/usf_lousa.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-    </style>
+    <title>Contactos – Unidade de Saúde Familiar Serra da Lousã</title>
+    <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/menu.js"></script>
     <script src="https://kit.fontawesome.com/1dda1fed81.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon32.jpg" sizes="32x32">
 </head>
 
 <body>
@@ -107,67 +105,58 @@
         </section>
     </header>
     <main>
-        <div class="layer">
-            <div class="Contentor">
-                <div class="img">
-                    <img width="500" src="img/medicine.svg">
+        <section class="hero-section">
+            <img src="img/contact-us.jpg" class="hero-image">
+            <div class="overlay">
+                <div class="hero-text">
                 </div>
-                <div id="login" class="login">
-                    <form class="login1" id="formRegistar">
-                        <h2 class="title">Novo registo:</h2>
-                        <div class="input-div one">
-                            <div class="i">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="div">
-                                <h5>Primeiro Nome</h5>
-                                <input type="text" id="firstName" class="input" maxlength="20">
-                            </div>
-                        </div>
-                        <div class="input-div one">
-                            <div class="i">
-                                <i class="fas fa-signature"></i>
-                            </div>
-                            <div class="div">
-                                <h5>Ultimo Nome</h5>
-                                <input type="text" id="lastName" class="input" maxlength="20">
-                            </div>
-                        </div>
-                        <div class="input-div one">
-                            <div class="i">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="div">
-                                <h5>Nome de utilizador</h5>
-                                <input type="text" id="username" class="input" maxlength="20">
-                            </div>
-                        </div>
-                        <div class="input-div one">
-                            <div class="i">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="div">
-                                <h5>Email</h5>
-                                <input type="email" id="useremail" required id="Utilizador1" class="input">
-                            </div>
-                        </div>
-                        <div class="input-div pass">
-                            <div class="i">
-                                <i class="fas fa-lock"></i>
-                            </div>
-                            <div class="div">
-                                <h5>Password</h5>
-                                <input type="password" class="input" id="password" maxlength="15" required title="Deve conter pelo menos um número, uma letra maiúscula, uma minúscula e pelo menos 8 caracteres">
-                            </div>
-                        </div>
-                        <p>Já registado?<a href="login.html">Entrar</a></p>
-                        <input type="submit" id="registar-btn" class="btn-login" value="Registar">
-
-                    </form>
+                <div class="text">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Pagina Inicial</a></li>
+                        <li class="active-link"><a href="#">Contactos</a></li>
+                    </ul>
+                    <h2>Contactos</h2>
                 </div>
             </div>
-            <script type="text/javascript" src="js/register.js"></script>
-            <script type="text/javascript" src="js/main.js"></script>
+        </section>
+        <div class="container">
+            <p>Sempre que possível, marque as suas consultas por telefone ou internet.</p>
+            <h5>Telefones:</h5>
+            <h5>Atendimento Geral (Assistentes Operacionais)</h5>
+            <p>&nbsp;Segunda a Sexta-feira 09:00h – 18:00h</p>
+            <p><strong>Número Geral</strong>: 239990636</p>
+            <hr>
+            <h5>Atendimento Secretariado Clínico</h5>
+            <p>Segunda a Sexta-feira 08:00h – 19:45h</p>
+            <p><strong>Ana Paula Esteves:</strong> 239990615 <strong>Rosário Carreira</strong><strong>:</strong> 239990614 <strong>João Paulo:</strong> 239990625 <strong>Sónia Tomé:</strong>239990624</p>
+            <hr>
+            <h5>Atendimento Médicos</h5>
+            <p>Segunda a Sexta -feira Definido no horário médico disponível <a href="http://www.newsite.usf-serradalousa.com/wp/horarios/">aqui</a></p>
+            <p>&nbsp;<strong>Joana Fernandes:</strong> 239990633 &nbsp;<strong>Jorge Rodrigues:</strong> 239990619&nbsp;<strong>Luísa Ramos:</strong>&nbsp;239990637<strong>Paula Braga da Cruz:</strong> 239990631 <strong>Paulo Costa:</strong> 239990616</p>
+            <hr>
+            <h5>Atendimento Enfermeiros</h5>
+            <p>Segunda a Sexta -feira 8.00h – 19:45h</p>
+            <p>239990639 ou 239990630</p>
+            <p><strong>Número da Sala de Tratamentos:</strong> 239990638</p>
+            <h4>E-mail:</h4>
+            <p>usf.serradalousa@gmail.com</p>
+            <p>&nbsp;</p>
+            <h4>Morada:</h4>
+            <p>Alameda Juiz Conselheiro Neves Ribeiro</p>
+            <p><img class="alignnone size-medium wp-image-435" src="http://www.usf-serradalousa.com/wp-content/uploads/2017/02/mapa-300x158.png" alt="mapa" srcset="http://www.usf-serradalousa.com/wp-content/uploads/2017/02/mapa-300x158.png 300w, http://www.usf-serradalousa.com/wp-content/uploads/2017/02/mapa-768x403.png 768w, http://www.usf-serradalousa.com/wp-content/uploads/2017/02/mapa-1024x538.png 1024w, http://www.usf-serradalousa.com/wp-content/uploads/2017/02/mapa.png 1399w"
+                    sizes="(max-width: 300px) 100vw, 300px" width="300" height="158"></p>
+            <p><a href="https://goo.gl/maps/LRz6fBHPvrG2">Mapa AQUI</a></p>
+        </div>
+        <div>
+            <div>
+                <h5>Morada:</h5>
+                <p>Alameda Juiz Conselheiro Neves Ribeiro</p>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3050.7705182027803!2d-8.2374327!3d40.1251173!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22eec46cea8771%3A0x3a6b8d741e04cc0e!2sCentro%20de%20Sa%C3%BAde%20da%20Lous%C3%A3!5e0!3m2!1sen!2spt!4v1610311166843!5m2!1sen!2spt"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
     </main>
     <!-- Footer -->
     <footer class="site-footer">
@@ -227,6 +216,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
