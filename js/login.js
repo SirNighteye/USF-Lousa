@@ -11,13 +11,11 @@ loginButton.addEventListener("click", (e) => {
     const password = loginForm.password.value;
 
     if (username === "admin" && password === "admin") {
-        // Se as credenciais forem válidas, mostra uma caixa de alerta e recarrega a página
-        alert("Você fez login com sucesso.");
-        window.location.href = "welcome_user.html";
 
-        location.reload();
+        window.location.href = "Bem-Vindo.html";
+
     } else {
-        // Otherwise, make the login error message show (change its oppacity)
+        // Caso contrário, mostre a mensagem de erro de login (altere sua opacidade)
         loginErrorMsg.style.display = 'block';
     }
 })

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USF Serra da Lousã – Unidade de Saúde Familiar Serra da Lousã</title>
+    <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css'>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style.css">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="js/menu.js"></script>
     <script src="https://kit.fontawesome.com/1dda1fed81.js" crossorigin="anonymous"></script>
@@ -17,106 +17,104 @@
 
 <body>
     <header>
-        <div class="subnav">
-            <div class="subnav_text">
-                <div><i class="fas fa-phone-alt"></i> 239-990-636</div>
-                <div><i class="far fa-clock"></i> <span class="bold">Segunda-Sexta:</span> 8:00H-19:45h</div>
-            </div>
-            <div class="submenu_icons">
-                <a href="https://www.facebook.com/municipiolousa" title="facebook" target="_blank">
-                    <i class="fa fa-facebook-f"></i>
-                </a>
-                <a href="mailto:usf.serradalousa@gmail.com" title="Email" target="_blank">
-                    <i class="fa fa-envelope-open"></i>
-                </a>
-                <a href="https://goo.gl/maps/J54ekyvGTwo55aGb7" title="Localização" target="_blank">
-                    <i class="fa fa-location-arrow"></i>
-                </a>
-            </div>
-
-        </div>
-        </div>
-        <section class="navigation">
-            <div class="nav-container">
-                <div class="brand">
-                    <a href="index.html">
-                        <div id="logo" class="flex"><img src="img/logo_verde.png" width="72" alt="logotipo da USF da lousã"></div>
+        <div class="navbar">
+            <div class="subnav">
+                <div class="subnav_text">
+                    <div><i class="fas fa-phone-alt"></i> 239-990-636</div>
+                    <div><i class="far fa-clock"></i> <span class="bold">Segunda-Sexta:</span> 8:00H-19:45h</div>
+                </div>
+                <div class="submenu_icons">
+                    <a href="https://www.facebook.com/municipiolousa" title="facebook" target="_blank">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                    <a href="mailto:usf.serradalousa@gmail.com" title="Email" target="_blank">
+                        <i class="fa fa-envelope-open"></i>
+                    </a>
+                    <a href="https://goo.gl/maps/J54ekyvGTwo55aGb7" title="Localização" target="_blank">
+                        <i class="fa fa-location-arrow"></i>
                     </a>
                 </div>
-                <nav>
-                    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-                    <ul class="nav-list">
-                        <li>
-                            <a href="index.html">Pagina Inicial</a>
-                        </li>
-                        <li>
-                            <a href="#!">Quem Somos</a>
-                            <ul class="nav-dropdown">
-                                <li>
-                                    <a href="acerca.html">Missão, Visão, Valores</a>
-                                </li>
-                                <li>
-                                    <a href="equipa.html">Equipa</a>
-                                </li>
-                                <li>
-                                    <a href="#!">outras informações</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#!">O que Fazemos</a>
-                            <ul class="nav-dropdown">
-                                <li>
-                                    <a href="servicos.html">Serviços</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Eventos</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Jornal da Unidade</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Consultas</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="indicadores.html">Indicadores</a>
-                        </li>
-                        <li>
-                            <a href="#!">Recursos</a>
-                        </li>
-                        <li>
-                            <a href="#!">Mais Apoio</a>
-                        </li>
-                        <li>
-                            <a href="contactos.html">Contactos</a>
-                        </li>
-                        <li>
-                            <a href="#!"><i class="fa fa-user"></i> Area do cliente</a>
-                            <ul class="nav-dropdown">
-                                <li>
-                                    <a href="login.html">Login</a>
-                                </li>
-                                <li>
-                                    <a href="registar.html">Registar</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
+
             </div>
-        </section>
+            <section class="navigation">
+                <div class="nav-container">
+                    <div class="brand">
+                        <a href="index.html">
+                            <div id="logo" class="flex"><img src="img/logo_verde.png" width="72" alt="logotipo da USF da lousã"></div>
+                        </a>
+                    </div>
+                    <nav>
+                        <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
+                        <ul class="nav-list">
+                            <li>
+                                <a href="index.html">Pagina Inicial</a>
+                            </li>
+                            <li>
+                                <a href="#">Quem Somos</a>
+                                <ul class="nav-dropdown">
+                                    <li>
+                                        <a href="acerca.html">Missão, Visão, Valores</a>
+                                    </li>
+                                    <li>
+                                        <a href="equipa.html">Equipa</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">O que Fazemos</a>
+                                <ul class="nav-dropdown">
+                                    <li>
+                                        <a href="servicos.html">Serviços</a>
+                                    </li>
+                                    <li>
+                                        <a href="eventos.html">Eventos</a>
+                                    </li>
+                                    <li>
+                                        <a href="jornal.html">Jornal da Unidade</a>
+                                    </li>
+                                    <li>
+                                        <a href="consultas.html">Consultas</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="indicadores.html">Indicadores</a>
+                            </li>
+                            <li>
+                                <a href="recursos.html">Recursos</a>
+                            </li>
+                            <li>
+                                <a href="mais-apoio.html">Mais Apoio</a>
+                            </li>
+                            <li>
+                                <a href="contactos.html">Contactos</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-user"></i> Area do cliente</a>
+                                <ul class="nav-dropdown">
+                                    <li>
+                                        <a href="login.html">Login</a>
+                                    </li>
+                                    <li>
+                                        <a href="registar.html">Registar</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </div>
     </header>
     <main>
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-                <img src="assets/img/Mamografia.png" class="slidesimg">
+                <img src="assets/img/Mamografia.png" class="slidesimg" />
                 <div class="overlay">
                     <div class="text">
                         <h2>Aviso: Unidade Móvel de Mamografia</h2>
-                        <a href="#" class="button">Saber mais</a>
+                        <a href="posts/unidade-movel-de-mamografia.html" class="button">Saber mais</a>
                     </div>
                 </div>
             </div>
@@ -127,7 +125,7 @@
                     <div class="text">
                         <div>
                             <h2>“Sono e tempo de ecrã” – Sessão educativa</h2>
-                            <a href="#" class="button">Saber mais</a>
+                            <a href="posts/sono-e-tempo-de-ecra.html" class="button">Saber mais</a>
                         </div>
                     </div>
                 </div>
@@ -138,7 +136,7 @@
                 <div class="overlay">
                     <div class="text">
                         <h2>9º Aniversário da USF</h2>
-                        <a href="#" class="button">Saber mais</a>
+                        <a href="posts/9-aniversario-da-usf.html" class="button">Saber mais</a>
                     </div>
                 </div>
             </div>
@@ -191,33 +189,33 @@
                 <div class="grid-about">
                     <div class="about_text">
                         <h6>Acerca</h6>
-                        <h5>Unidade De Saúde Familiar Serra Da Lousã</h3>
-                            <blockquote>
-                                <p>A utopia constrói-se</br> caminhando</p>
-                            </blockquote>
-                            <p>
-                                Somos uma equipa constituída por Médicos de Família, Enfermeiros, Secretários Clínicos, Assistente Operacional, Internos de Especialidade de Medicina Geral e Familiar, alunos de Medicina e Enfermagem, motivados para o servir melhor.
-                            </p>
-                            <div class="thumbnail" style="background: url('img/video-thumb.png')">
-                                <div class="overlay-thumbnail">
-                                    <a href="#open-modal">
-                                        <div class="playbutton">
-                                            <i class="fas fa-play"></i>
-                                        </div>
-                                    </a>
-                                </div>
+                        <h5>Unidade De Saúde Familiar Serra Da Lousã</h5>
+                        <blockquote>
+                            <p>A utopia constrói-se <br> caminhando</p>
+                        </blockquote>
+                        <p>
+                            Somos uma equipa constituída por Médicos de Família, Enfermeiros, Secretários Clínicos, Assistente Operacional, Internos de Especialidade de Medicina Geral e Familiar, alunos de Medicina e Enfermagem, motivados para o servir melhor.
+                        </p>
+                        <div class="thumbnail" style="background: url('img/video-thumb.png')">
+                            <div class="overlay-thumbnail">
+                                <a href="#open-modal">
+                                    <div class="playbutton">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </a>
                             </div>
-                            <div id="open-modal" class="modal-window ">
+                        </div>
+                        <div id="open-modal" class="modal-window ">
+                            <div>
+                                <a href="#modal-close" title="Close" class="modal-close">&times;</a>
                                 <div>
-                                    <a href="#modal-close" title="Close" class="modal-close">&times;</a>
-                                    <div>
-                                        <video width="400" controls>
+                                    <video width="400" controls>
                                             <source src="assets/video/Dra_Marília.mp4" type="video/mp4">
                                             O seu navegador não suporta vídeo HTML.
                                         </video>
-                                    </div>
                                 </div>
                             </div>
+                        </div>
                     </div>
                     <div class="offer">
                         <div class="icon-about"><img src="img/icons/black/Stethoscope.png" /></div>
@@ -244,11 +242,12 @@
                         <a href="#atividades">Saber mais <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <a href="services.html" class="button">Saber mais</a>
+                <a href="servicos.html" class="button">Saber mais</a>
                 <div id="programada" class="modal-window ">
                     <div>
                         <a href="#modal-close" title="Close" class="modal-close">&times;</a>
                         <div>
+                            <h5>Consultas Programada</h5>
                             <h6>Consultas de vigilância e promoção de saúde</h6>
                             <ul>
                                 <li>Saúde Infantil e Juvenil (dos 0 aos 18 anos);</li>
@@ -336,8 +335,8 @@
             <div class="container">
                 <div class="appointment_txt">
                     <h6 class="white">Agendar um compromisso</h6>
-                    <h2 class="white">Marque já </br>uma consulta.</h2>
-                    <button class="green_button">Marcar consulta</button>
+                    <h2 class="white">Marque já <br>uma consulta.</h2>
+                    <a href="consultas.html" class="green_button">Marcar consulta</a>
                 </div>
                 <div class="appointment_img">
                     <img src="img/doctor.png" />
@@ -762,7 +761,8 @@
                     <div class="content">
                         <ol type="A">
                             <li>
-                                <p>O Isolamento e quarentena (isolamento profilático) são medidas de distanciamento social e correspondem a um período de que <strong>lhe será comunicado pela Autoridade de Saúde ou Clínico que o acompanha</strong> (deve <strong>cumprir
+                                <p>O Isolamento e quarentena (isolamento profilático) são medidas de distanciamento social e correspondem a um período de que <strong>lhe será comunicado pela Autoridade de Saúde ou Clínico que o acompanha</strong> (deve
+                                    <strong>cumprir
                                     as recomendações da Direcção Geral de Saúde</strong> que pode consultar - <a href="https://covid19.min-saude.pt/wp-content/uploads/2020/03/i026011.pdf" target="_blank">aqui</a>).</p>
                             </li>
                             <li>
@@ -927,74 +927,11 @@
                         </ol>
                     </div>
                 </section>
-
-
             </div>
-            </div>
-            </div>
-            </div>
-        </section>
-        </div>
         </section>
     </main>
     <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="section-footer footerabout">
-                    <h6>USF Lousã</h6>
-                    <p class="text-justify">Somos uma equipa constituída por Médicos de Família, Enfermeiros, Secretários Clínicos, Assistente Operacional, Internos de Especialidade de Medicina Geral e Familiar, alunos de Medicina e Enfermagem, motivados para o servir melhor.
-                    </p>
-                </div>
-                <div class="section-footer">
-                    <h6>Paginas</h6>
-                    <ul class="footer-links">
-                        <li><a href="">Quem Somos</a></li>
-                        <li><a href="">O que Fazemos</a></li>
-                        <li><a href="">Indicadores</a></li>
-                        <li><a href="">Recursos</a></li>
-                        <li><a href="">Mais Apoio</a></li>
-                        <li><a href="">Contactos</a></li>
-                    </ul>
-                </div>
-                <div class="section-footer">
-                    <h6>Categorias</h6>
-                    <ul class="footer-links">
-                        <li><a href="#">Eventos</a></li>
-                        <li><a href="#">Informação ao Utente</a></li>
-                        <li><a href="#">Jornal da Unidade</a></li>
-                    </ul>
-                </div>
-                <div class="section-footer">
-                    <h6>Contactos</h6>
-                    <ul class="footer-links">
-                        <li><i class="fa fa-map-marker-alt"></i> <a href="#">Alameda Juiz Conselheiro Neves Ribeiro</a>
-                        </li>
-                        <li><i class="fa fa-phone"></i> <a href="#">239-990-636</a></li>
-                        <li><i class="fa fa-envelope"></i> <a href="#">usf.serradalousa@gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-        </div>
-        <div class=" container">
-            <div class="footer-bottom row">
-                <div>
-                    <p class="copyright-text">Copyright &copy;
-                        <script>
-                            document.write(new Date().getFullYear())
-                        </script> Daniel Cardoso & Luís Roque. Todos os direitos reservados.
-                    </p>
-                </div>
 
-                <div>
-                    <a href="#">Política de Privacidade</a>
-                    <a href="#">Mapa do site</a>
-                    <a href="#">Termos de uso</a>
-                </div>
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>

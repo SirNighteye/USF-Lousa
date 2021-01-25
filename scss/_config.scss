@@ -1,3 +1,24 @@
+/* 
+============================================
+                Variaveis 
+============================================
+*/
+
+//////////// Cores \\\\\\\\\\\\
+
+/* ------ Principais ------- */
+
+$text-color: #0D1B26;
+$theme-color: #223645;
+$primary-color:#8FB569;
+$accent-color:#FB245C;
+$gray-1: #eee;
+$gray-2: #ccc;
+$gray-3: #555;
+$link-color: $accent-color;
+
+/* ------ Secundarias ------- */
+
 $blue: #007bff;
 $indigo: #6610f2;
 $purple: #6f42c1;
@@ -18,29 +39,14 @@ $warning: #ffc107;
 $danger: #dc3545;
 $light: #f8f9fa;
 $dark: #343a40;
+//////// Breakpoints \\\\\\\
 $breakpoint-xs: 0;
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
-
-/* 
-============================================
-                Variaveis 
-============================================
-*/
-
-$text-color: #0D1B26;
-$theme-color: #223645;
-$primary-color:#8FB569;
-$accent-color:#FB245C;
-$ternary-color: #ccf962;
-$menu-item-color: white;
-$gray-1: #eee;
-$gray-2: #ccc;
-$gray-3: #555;
-$link-color: $accent-color;
+$breakpoint-xl: 1280px;
 $content-width: 1200px;
+//////////// Fonts \\\\\\\\\\\\
 $nav-background: #fff;
 $text-font: Poppins,
 Verdana,
@@ -89,6 +95,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     border-radius: 100px;
+    cursor: pointer;
 }
 
 .line {
@@ -99,6 +106,21 @@ body {
 
 .white {
     color: white;
+}
+
+figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+    img {
+        width: 100%;
+    }
+}
+
+figcaption {
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
 }
 
 video {
@@ -273,6 +295,9 @@ a {
     margin: 0 auto;
 }
 
+
+/* ----------- Tabelas  ----------- */
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -313,4 +338,280 @@ tr:hover {
 
 .selectedTableRow {
     background-color: rgba(141, 186, 238, 0.76) !important;
+}
+
+//
+.entry-meta {
+    margin-top: 16px;
+    a {
+        color: $theme-color;
+    }
+    div {
+        margin-right: 16px;
+    }
+}
+
+.appointment-form {
+    margin-top: 100px;
+    width: 700px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    p {
+        color: #000;
+        font-size: 16px;
+    }
+    #FirstName {
+        margin-right: 32px;
+    }
+    .inputs {
+        width: 300px;
+    }
+}
+
+.appointment-time {
+    margin-top: 100px;
+    background-image: url('../img/usf_lousa.jpg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    p {
+        color: #fff;
+    }
+    h4 {
+        color: #fff;
+        margin: 32px 0;
+    }
+    .inner-box {
+        height: 100%;
+        background: rgba($color: $theme-color, $alpha: .9);
+        padding: 32px;
+        color: #FFF;
+        padding-top: 32px;
+    }
+}
+
+.signle-time-box {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    .day-name {
+        font-weight: 600;
+    }
+}
+
+.card_number {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: $accent-color;
+    border: none;
+    color: white;
+    font-family: $text-font;
+    padding: 15px 32px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.appointment-form_header {
+    margin-bottom: 32px;
+    h4 {
+        text-align: left;
+    }
+    p {
+        color: $gray-3;
+    }
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.contact {
+    position: relative;
+    top: -100px;
+    width: 320px;
+    height: 320px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba($color: #000000, $alpha: 0.1);
+    border: 1px solid $gray-2;
+    h5 {
+        margin-bottom: 32px;
+    }
+    .flex {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.contact-icon {
+    position: relative;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    color: #fff;
+}
+
+.phone {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 100px;
+    ul {
+        list-style: none;
+    }
+}
+
+.map {
+    margin-top: 390px;
+    width: 100%;
+    height: 450px;
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.resource {
+    margin-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .resource_img {
+        margin-right: 32px;
+        img {
+            width: 300px;
+            height: 255px;
+            object-fit: cover;
+        }
+    }
+    .resource_txt {
+        ul {
+            list-style: none;
+        }
+        max-width: 70%;
+    }
+}
+
+.layer {
+    .white_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        width: 50vw;
+        height: 57vh;
+        color: black;
+        background-color: white;
+        border: 1px solid;
+        padding: 30px;
+        border-radius: 15px;
+    }
+}
+
+@media only screen and (max-width: $breakpoint-xl) {
+    .appointment-form {
+        width: 100%;
+        #FirstName {
+            margin-right: 0;
+        }
+        .inputs {
+            width: 100%;
+        }
+    }
+    .appointment-time {
+        width: 100%;
+        order: -1;
+    }
+    .appointment-form {
+        width: 100%;
+    }
+    .resource {
+        justify-content: center;
+        .resource_img {
+            order: -1;
+            margin-right: 0;
+            img {
+                width: 100%;
+                height: 250px;
+            }
+        }
+        .resource_txt {
+            ul {
+                list-style: none;
+            }
+            max-width: 70%;
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-lg) {
+    .contacts {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .contact {
+        position: relative;
+        top: 0;
+        margin-top: 100px;
+        h5 {
+            margin-bottom: 32px;
+        }
+        .flex {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.post {
+    margin: 100px 0;
+    img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 16px 16px 0 0;
+    }
+    border-radius: 16px;
+    background: white;
+    .post_txt {
+        padding: 32px;
+    }
 }

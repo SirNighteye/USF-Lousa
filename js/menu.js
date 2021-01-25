@@ -1,23 +1,23 @@
-(function($) { // Begin jQuery
-    $(function() { // DOM ready
-        // If a link has a dropdown, add sub menu toggle.
+(function($) {
+    $(function() {
+        // Se um link tiver um menu suspenso, adicione alternador de submenu.
         $('nav ul li a:not(:only-child)').click(function(e) {
             $(this).siblings('.nav-dropdown').toggle();
-            // Close one dropdown when selecting another
+            // Feche um menu suspenso ao selecionar outro
             $('.nav-dropdown').not($(this).siblings()).hide();
             e.stopPropagation();
         });
-        // Clicking away from dropdown will remove the dropdown class
+        // Clicar fora do menu suspenso removerá a classe suspensa
         $('html').click(function() {
             $('.nav-dropdown').hide();
         });
-        // Toggle open and close nav styles on click
+        // Alterna para abrir e fechar estilos de navegação ao clicar
         $('#nav-toggle').click(function() {
             $('nav ul').slideToggle();
         });
-        // Hamburger to X toggle
+        // Alternar menu para X
         $('#nav-toggle').on('click', function() {
             this.classList.toggle('active');
         });
-    }); // end DOM ready
-})(jQuery); // end jQuery
+    });
+})(jQuery);

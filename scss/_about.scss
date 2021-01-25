@@ -1,150 +1,184 @@
-        .img_about {
-            img {
-                box-shadow: 26px 21px 0 rgba($primary-color, .24);
-                height: 600px;
+/* -----------  Acerca  ----------- */
+
+.img_about {
+    img {
+        box-shadow: 26px 21px 0 rgba($primary-color, .24);
+        height: 600px;
+    }
+}
+
+.text_about {
+    margin-left: 100px;
+    width: 500px;
+}
+
+.about {
+    margin: 100px auto;
+    ul {
+        list-style: none;
+        li {
+            li {
+                margin-left: 48px;
             }
         }
-        
-        .text_about {
-            margin-left: 100px;
-            width: 500px;
-        }
-        
-        .about {
-            margin: 100px auto;
-            ul {
-                list-style: none;
-                li {
-                    li {
-                        margin-left: 48px;
-                    }
-                }
-            }
-        }
-        
-        .vision-mission-usf {
-            margin-top: 50px;
-        }
-        
-        .values-usf {
-            margin-top: 100px;
-            h5 {
-                margin-bottom: 32px;
-            }
-            p {
-                margin-bottom: 16px;
-            }
-        }
-        
-        #values-usf-table {
-            margin-bottom: 100px;
-        }
-        
-        .team-section {
-            .container {
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-            }
-        }
-        
-        .doctors {
-            margin: 100px 0;
-        }
-        
-        .nurses {
-            margin: 100px 0;
-        }
-        /*
+    }
+}
+
+.vision-mission-usf {
+    margin-top: 50px;
+}
+
+.values-usf {
+    margin-top: 100px;
+    h5 {
+        margin-bottom: 32px;
+    }
+    p {
+        margin-bottom: 16px;
+    }
+}
+
+#values-usf-table {
+    margin-bottom: 100px;
+}
+
+.team-section {
+    .container {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.doctors {
+    margin: 100px 0;
+}
+
+.nurses {
+    margin: 100px 0;
+}
+
+
+/*
 ============================================
                 Formulario
 ============================================
 */
-        
-        .open-button {
-            background-color: $theme-color;
-            color: white;
-            padding: 16px 20px;
-            border: none;
-            cursor: pointer;
-            opacity: 0.8;
-            position: fixed;
-            bottom: 23px;
-            right: 28px;
-            width: 280px;
-            font-family: $text-font;
-        }
-        
-        .form-popup {
+
+.open-button {
+    background-color: $theme-color;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    font-family: $text-font;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+input[type=email],
+input[type=text],
+input[type=tel],
+input[type=password],
+input[type=number],
+input[type=date],
+textarea,
+select {
+    max-width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    font-family: $text-font;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=number] {
+    width: 100px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container {
+    .btn {
+        background-color: $primary-color;
+        font-family: $text-font;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+        opacity: 0.8;
+    }
+}
+
+.form-container {
+    .cancel {
+        background-color: $accent-color;
+    }
+}
+
+.form-container {
+    .btn:hover,
+    .open-button:hover {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: $breakpoint-xl) {
+    .img_about {
+        img {
             display: none;
-            position: fixed;
-            bottom: 0;
-            right: 15px;
-            border: 3px solid #f1f1f1;
-            z-index: 9;
         }
-        
-        .form-container {
-            max-width: 300px;
-            padding: 10px;
-            background-color: white;
-        }
-        
-        .form-container input[type=text],
-        input[type=tel],
-        .form-container input[type=password],
-        textarea,
-        select {
-            width: 100%;
-            padding: 15px;
-            font-size: 14px;
-            margin: 5px 0 22px 0;
-            border: none;
-            background: #f1f1f1;
-            font-family: $text-font;
-        }
-        
-        .form-container input[type=text]:focus,
-        .form-container input[type=password]:focus {
-            background-color: #ddd;
-            outline: none;
-        }
-        
-        .form-container {
-            .btn {
-                background-color: $primary-color;
-                font-family: $text-font;
-                color: white;
-                padding: 16px 20px;
-                border: none;
-                cursor: pointer;
-                width: 100%;
-                margin-bottom: 10px;
-                opacity: 0.8;
-            }
-        }
-        
-        .form-container {
-            .cancel {
-                background-color: $accent-color;
-            }
-        }
-        
-        .form-container {
-            .btn:hover,
-            .open-button:hover {
-                opacity: 1;
-            }
-        }
-        
-        @media only screen and (max-width: $breakpoint-xl) {
-            .img_about {
-                img {
-                    display: none;
-                }
-            }
-            .text_about {
-                margin-left: 0;
-                width: 100%;
-            }
-        }
+    }
+    .text_about {
+        margin-left: 0;
+        width: 100%;
+    }
+}
